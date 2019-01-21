@@ -1,0 +1,21 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:0331b69b21bafe3e169b8a6c683bc030:09fdad969e6b55ef02929d6acdfdd1a6:f683c4e9aa78f29e0ed6c6b94537e31d$
+#
+:format=40300
+:texture=sprites_all.png
+:size=128x128
+:pivotpoints=enabled
+:borders=disabled
+
+credits-little faces-jern;1;95;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-joel;34;95;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-mamander;67;95;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-met;1;62;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-ratch;34;62;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-woostern;67;62;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-zern;1;29;32;32; 0.5;0.5; 0;0;0;0
