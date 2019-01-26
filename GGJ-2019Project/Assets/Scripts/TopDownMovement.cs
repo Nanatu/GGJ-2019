@@ -8,6 +8,7 @@ public class TopDownMovement : MonoBehaviour
     public enum Facing { North, South, East, West };
 
     public static TopDownMovement instance;
+    public BreathMeter breathMeter;
     public Facing facing;
     public Rigidbody2D rb2D;
     public BoxCollider2D bc2D;
@@ -18,7 +19,6 @@ public class TopDownMovement : MonoBehaviour
     public float NormalSpeed = 1;
     public float CarryingSpeed = 2;
     public bool IsCarryingSeed = false;
-    
     public bool busyHandlingInput = false;
 
     public void Awake()
@@ -35,11 +35,12 @@ public class TopDownMovement : MonoBehaviour
         bc2D = gameObject.GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        breathMeter = GetComponent<BreathMeter>();
     }
 
     void Update()
     {
-        if(IsCarryingSeed)
+        if (IsCarryingSeed)
             speed = CarryingSpeed;
         else
             speed = NormalSpeed;
@@ -80,6 +81,9 @@ public class TopDownMovement : MonoBehaviour
             velocity.Set(speed, velocity.y);
             facing = Facing.East;
         }
+
+        if(breathMeter.isDead)
+            velocity.Set(0, 0);
 
         rb2D.velocity = velocity;
 
