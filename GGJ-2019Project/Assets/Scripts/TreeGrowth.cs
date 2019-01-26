@@ -10,6 +10,22 @@ public class TreeGrowth : MonoBehaviour
 
     public float decayTime = 2f;
     private float curTime = 0f;
+
+    private float growth = 0.0f;
+    
+    public float sproutStage = 0.2f;
+    public float seedlingStage = 0.4f;
+    public float tweenStage = 0.6f;
+    public float adultStage = 0.8f;
+    public float ancientStage = 1f;
+
+    public Sprite sprout;
+    public Sprite seedling;
+    public Sprite tween;
+    public Sprite adult;
+    public Sprite ancient;
+
+    private bool madeSeed = false;
     
     // Start is called before the first frame update
     void Start()
@@ -21,11 +37,7 @@ public class TreeGrowth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //increase growthRing based on growth rate
-        float scaleX = growthRing.transform.localScale.x + growthRate;
-        float scaleY = growthRing.transform.localScale.y + growthRate;
-        
-        growthRing.transform.localScale = new Vector3(scaleX, scaleY);
+
         if (curTime <= decayTime)
         {
             curTime += Time.deltaTime;
@@ -40,5 +52,68 @@ public class TreeGrowth : MonoBehaviour
             }
         }
 
+        if (growthRate > 0.0f)
+        {
+            GrowTree();
+        }
+
+        if (!madeSeed && growth > adultStage)
+        {
+            SpawnSeed();
+        }
+        
+
+    }
+
+    private void GrowTree()
+    {
+
+        growth += growthRate;
+        
+        growthRing.transform.localScale = new Vector3(growth, growth);
+
+        AgeTree();
+
+    }
+
+    private void AgeTree()
+    {
+        if (growth >= seedlingStage && growth < tweenStage)
+        {
+            //change sprite/animate to seedling
+            gameObject.GetComponent<SpriteRenderer>().sprite = seedling;
+        }else if (growth >= tweenStage && growth < adultStage)
+        {
+            //change sprite/animate to tween
+            gameObject.GetComponent<SpriteRenderer>().sprite = tween;
+        }else if (growth >= adultStage && growth < ancientStage)
+        {
+            //change sprite/animate to adult
+            gameObject.GetComponent<SpriteRenderer>().sprite = adult;
+        }else if (growth >= ancientStage)
+        {
+            //change sprite/animate to ancient
+            gameObject.GetComponent<SpriteRenderer>().sprite = ancient;
+        }
+    }
+
+    //Add some resources and increase the growth rate
+    public void AddResource(float resourceValue)
+    {
+        growthRate += resourceValue;
+    }
+
+    //Quickly add a Resource
+    public void AddResource()
+    {
+        AddResource(0.1f);
+    }
+
+    private void SpawnSeed()
+    {
+        GameObject seed = GameObject.Find("ResourceManager").GetComponent<ResourceManager>().seed;
+        Instantiate(seed, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity, gameObject.transform);
+        
+        madeSeed = true;
     }
 }
