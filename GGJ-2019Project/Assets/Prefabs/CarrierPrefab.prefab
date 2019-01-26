@@ -237,8 +237,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3961ad8e09897c94caf6c7aa27a52092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  atHome: {fileID: 0}
-  awayHome: {fileID: 0}
+  atHome: {fileID: 7231806332065544238}
+  awayHome: {fileID: 8898344799198725898}
 --- !u!82 &7231806332065544238
 AudioSource:
   m_ObjectHideFlags: 0
@@ -249,7 +249,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 326d9144e449aaa4b8491c12ce9128ce, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 86f00d404e6147d409ebe8a9a5f900d6, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -345,7 +345,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e6e7c417913a1bb4ab383b54461fdd9c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f1581478ee18b5c4fbd7229aa8944651, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

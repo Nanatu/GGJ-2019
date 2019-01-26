@@ -164,16 +164,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1914062025584291184, guid: c96e0965236ef8649b40d90d29caf4c3,
-        type: 3}
-      propertyPath: atHome
-      value: 
-      objectReference: {fileID: 1142280010}
-    - target: {fileID: 1914062025584291184, guid: c96e0965236ef8649b40d90d29caf4c3,
-        type: 3}
-      propertyPath: awayHome
-      value: 
-      objectReference: {fileID: 1142280009}
     - target: {fileID: 3752828736268287649, guid: c96e0965236ef8649b40d90d29caf4c3,
         type: 3}
       propertyPath: m_Name
@@ -236,18 +226,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c96e0965236ef8649b40d90d29caf4c3, type: 3}
---- !u!82 &1142280009 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8898344799198725898, guid: c96e0965236ef8649b40d90d29caf4c3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1051054042}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1142280010 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7231806332065544238, guid: c96e0965236ef8649b40d90d29caf4c3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1051054042}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &753910087421347487
 PrefabInstance:
   m_ObjectHideFlags: 0
