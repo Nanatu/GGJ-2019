@@ -111,7 +111,7 @@ public class StartMenuDriver : MonoBehaviour
     {
         chosenScene = nextScene.SCENEJUMPA;
         setTriggerForAnimator("Used");
-        Debug.Log("loading credits...");
+        Debug.Log("loading SceneA...");
     }
 
     private void setTriggerForAnimator(string name)
