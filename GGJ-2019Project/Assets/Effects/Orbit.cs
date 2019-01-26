@@ -15,15 +15,12 @@ public class Orbit : MonoBehaviour
     public float springyness = 1;
     public float efficiency = .2f;
 
-    private bool wasActive;
-
     public bool IsActive;
 
 
     private float springVelocity;
     private float curRadius;
 
-    public 
 
     // Start is called before the first frame update
     void Start()
@@ -36,16 +33,16 @@ public class Orbit : MonoBehaviour
     {
         var toTarget = (this.transform.position - target.transform.position);
 
-//        if (!wasActive && IsActive)
-//        {
-            //figure out where in the orbit the two are so it starts orbiting in the right spot
+        //figure out where in the orbit the two are so it starts orbiting in the right spot
+        if (curRadius > .3f)
+        {
             var angle = Mathf.Atan2(toTarget.y, toTarget.x);
             percentRotation = angle / (2 * Mathf.PI);
+        }
 
-            curRadius = toTarget.magnitude;
-            //Debug.Log($"angle: {angle}");
+        curRadius = toTarget.magnitude;
+        //Debug.Log($"angle: {angle}");
 
-//        }
         if(IsActive && target != null)
         {
             //loop percent
@@ -67,6 +64,5 @@ public class Orbit : MonoBehaviour
             this.transform.position = new Vector3(x, y, this.transform.position.z);
         }
 
-        wasActive = IsActive;
     }
 }
