@@ -14,7 +14,11 @@ public class TopDownMovement : MonoBehaviour
     public Animator animator;
     public SpriteRenderer spriteRenderer;
 
-    public float speed = 1;
+    private float speed = 1;
+    public float NormalSpeed = 1;
+    public float CarryingSpeed = 2;
+    public bool IsCarryingSeed = false;
+    
     public bool busyHandlingInput = false;
 
     public void Awake()
@@ -31,6 +35,14 @@ public class TopDownMovement : MonoBehaviour
         bc2D = gameObject.GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    void Update()
+    {
+        if(IsCarryingSeed)
+            speed = CarryingSpeed;
+        else
+            speed = NormalSpeed;
     }
 
     public virtual void FixedUpdate()
