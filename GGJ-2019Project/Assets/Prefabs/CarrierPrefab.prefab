@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3752828736268287649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.67215246, y: 0.6393733, z: -0.039222166}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3752828736963373365}
@@ -62,7 +62,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3752828736963373354}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.68818057, y: -0.751571, z: 0.039222166}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3752828736268287650}
@@ -105,7 +105,7 @@ SpriteRenderer:
   m_SortingLayerID: -579322829
   m_SortingLayer: 2
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300016, guid: 38363ceb212a60c4abdb7ef70baab8cf, type: 3}
+  m_Sprite: {fileID: 21300074, guid: 38363ceb212a60c4abdb7ef70baab8cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -138,6 +138,7 @@ MonoBehaviour:
   CarryingSpeed: 2
   IsCarryingSeed: 0
   busyHandlingInput: 0
+  numOfResources: 0
 --- !u!50 &3752828736963373367
 Rigidbody2D:
   serializedVersion: 4
