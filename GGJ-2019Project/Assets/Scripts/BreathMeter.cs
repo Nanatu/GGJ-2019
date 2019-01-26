@@ -6,7 +6,7 @@ public class BreathMeter : MonoBehaviour
 {
     public float SecondsOfBreath;
     private float maxBreath;
-    private bool safeAtHome = false;
+    private bool safeAtHome = true;
 
     void Start()
     {
@@ -21,7 +21,7 @@ public class BreathMeter : MonoBehaviour
         {
             if (SecondsOfBreath < maxBreath)
             {
-                SecondsOfBreath += Time.deltaTime * 2;
+                SecondsOfBreath += Time.deltaTime * SecondsOfBreath;
             }
         }
 
@@ -29,18 +29,16 @@ public class BreathMeter : MonoBehaviour
             SecondsOfBreath = maxBreath;
     }
 
-    private void OnTriggerEnter2d(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.tag);
         if (other.tag == "Oasis")
         {
             safeAtHome = true;
         }
     }
 
-    private void OnTriggerExit2d(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log(other.tag);
         if (other.tag == "Oasis")
         {
             safeAtHome = false;
