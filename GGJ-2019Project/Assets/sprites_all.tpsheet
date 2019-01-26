@@ -4,7 +4,7 @@
 # To import these sprites into your Unity project, download "TexturePackerImporter":
 # https://www.codeandweb.com/texturepacker/unity
 #
-# $TexturePacker:SmartUpdate:2b768bc8bc1267e0c5fe3596f72c5206:b5ef106f6073239daf20b10e92580f11:f683c4e9aa78f29e0ed6c6b94537e31d$
+# $TexturePacker:SmartUpdate:e4e4648e3943740637cd7a475a0d8ae8:c5cc61431603fefab1bd8ede5b72b722:f683c4e9aa78f29e0ed6c6b94537e31d$
 #
 :format=40300
 :texture=sprites_all.png
@@ -13,14 +13,18 @@
 :borders=disabled
 
 carrier-die1;1;479;32;32; 0.5;0.5; 0;0;0;0
-carrier-idle1;1;479;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-jern;34;479;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-joel;67;479;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-mamander;100;479;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-met;133;479;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-ratch;166;479;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-woostern;199;479;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-zern;1;446;32;32; 0.5;0.5; 0;0;0;0
-resource1-neutral;34;458;20;20; 0.5;0.5; 0;0;0;0
-tree-ancientTree;55;278;200;200; 0.5;0.5; 0;0;0;0
-tree-seed;1;252;25;25; 0.5;0.5; 0;0;0;0
+carrier-idle1;34;479;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-jern;67;479;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-joel;100;479;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-mamander;133;479;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-met;166;479;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-ratch;199;479;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-woostern;1;446;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-zern;34;446;32;32; 0.5;0.5; 0;0;0;0
+resource1-neutral;67;458;20;20; 0.5;0.5; 0;0;0;0
+tree-adultTree;88;326;153;152; 0.5;0.5; 0;0;0;0
+tree-ancientTree;1;148;168;177; 0.5;0.5; 0;0;0;0
+tree-seed;170;300;25;25; 0.5;0.5; 0;0;0;0
+tree-seedling;1;49;74;98; 0.5;0.5; 0;0;0;0
+tree-sprout;76;106;68;41; 0.5;0.5; 0;0;0;0
+tree-tweenTree;145;25;95;122; 0.5;0.5; 0;0;0;0

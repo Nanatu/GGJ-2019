@@ -15,6 +15,10 @@ TextureImporter:
     21300020: tree-ancientTree
     21300022: tree-seed
     21300024: carrier-die1
+    21300026: tree-adultTree
+    21300028: tree-seedling
+    21300030: tree-sprout
+    21300032: tree-tweenTree
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -100,33 +104,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5fb1106c307a0a04f9d4f32feac87958
+      spriteID: 3e554f8171322464dbf26a2f30921ac3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: carrier-idle1
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 479
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 335c9cc1f90eff24ebbecd078629b629
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: credits-little faces-jern
       rect:
         serializedVersion: 2
         x: 34
@@ -140,13 +124,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 18f49749ecd02d84fa9343f17fe1fccb
+      spriteID: 36e50de9b3a380c43b6f8e99583c1a37
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: credits-little faces-joel
+      name: credits-little faces-jern
       rect:
         serializedVersion: 2
         x: 67
@@ -160,13 +144,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 07e5f1485bf0acc4197e104d2de51ccc
+      spriteID: bc84fcaddeea6744bbb33a2b7c8c4ae6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: credits-little faces-mamander
+      name: credits-little faces-joel
       rect:
         serializedVersion: 2
         x: 100
@@ -180,13 +164,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 830cc96be7e702d43bbbef95c122e4e9
+      spriteID: 06607eab8233fa14bb5652eacfa083be
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: credits-little faces-met
+      name: credits-little faces-mamander
       rect:
         serializedVersion: 2
         x: 133
@@ -200,13 +184,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa58f701ddd4b664c83b84b57502c12e
+      spriteID: faa11a261b0182543947cfa3a41ed16a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: credits-little faces-ratch
+      name: credits-little faces-met
       rect:
         serializedVersion: 2
         x: 166
@@ -220,13 +204,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fce5d45cf75040345b7dc504fdd4511d
+      spriteID: deb12288960f50b4a8e36ccb193db1a2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: credits-little faces-woostern
+      name: credits-little faces-ratch
       rect:
         serializedVersion: 2
         x: 199
@@ -240,13 +224,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35791e2321d47bd449f3d252438bd38b
+      spriteID: aef69b7192e932e4c986b4c67b14f54e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: credits-little faces-zern
+      name: credits-little faces-woostern
       rect:
         serializedVersion: 2
         x: 1
@@ -260,7 +244,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ec0032f2096c89d4d80d88151f23aa42
+      spriteID: c032eaa0ce8b3ce4795df01c74965d60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: credits-little faces-zern
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 446
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca4504d89aa78974c84d0626bb5c913c
       vertices: []
       indices: 
       edges: []
@@ -269,7 +273,7 @@ TextureImporter:
       name: resource1-neutral
       rect:
         serializedVersion: 2
-        x: 34
+        x: 67
         y: 458
         width: 20
         height: 20
@@ -280,7 +284,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e76153f150db75c48943d21bd93ee805
+      spriteID: 15962e4b00378e54d959e7760dc9b429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-adultTree
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 326
+        width: 153
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d92fe048c95f6e4494241b81a8e2148
       vertices: []
       indices: 
       edges: []
@@ -289,10 +313,10 @@ TextureImporter:
       name: tree-ancientTree
       rect:
         serializedVersion: 2
-        x: 55
-        y: 278
-        width: 200
-        height: 200
+        x: 1
+        y: 148
+        width: 168
+        height: 177
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,7 +324,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3b1cc0fe68801f244857a8269c8a6656
+      spriteID: a2ca1fda8203e1449a698aeef56a64be
       vertices: []
       indices: 
       edges: []
@@ -309,8 +333,8 @@ TextureImporter:
       name: tree-seed
       rect:
         serializedVersion: 2
-        x: 1
-        y: 252
+        x: 170
+        y: 300
         width: 25
         height: 25
       alignment: 0
@@ -320,7 +344,67 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3528c0d3d00310d4d892b4387896c314
+      spriteID: 367f3af7ba70d9c4692b58e1cf62e8b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-seedling
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 49
+        width: 74
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c085beda1c09e744b8095507eeb2a80e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-sprout
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 106
+        width: 68
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08984c6323788b4b93203b05aeecb52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-tweenTree
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 25
+        width: 95
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda40d6a175c75344b7cf7e2112ef778
       vertices: []
       indices: 
       edges: []
