@@ -4,7 +4,7 @@
 # To import these sprites into your Unity project, download "TexturePackerImporter":
 # https://www.codeandweb.com/texturepacker/unity
 #
-# $TexturePacker:SmartUpdate:ef6e16c819847a7624efd71e30617409:73a3faf7de2885af1b9694853beacab3:f683c4e9aa78f29e0ed6c6b94537e31d$
+# $TexturePacker:SmartUpdate:2b768bc8bc1267e0c5fe3596f72c5206:b5ef106f6073239daf20b10e92580f11:f683c4e9aa78f29e0ed6c6b94537e31d$
 #
 :format=40300
 :texture=sprites_all.png
@@ -12,6 +12,7 @@
 :pivotpoints=enabled
 :borders=disabled
 
+carrier-die1;1;479;32;32; 0.5;0.5; 0;0;0;0
 carrier-idle1;1;479;32;32; 0.5;0.5; 0;0;0;0
 credits-little faces-jern;34;479;32;32; 0.5;0.5; 0;0;0;0
 credits-little faces-joel;67;479;32;32; 0.5;0.5; 0;0;0;0
