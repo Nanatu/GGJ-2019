@@ -31,11 +31,19 @@ public class BreathMeter : MonoBehaviour
 
     private void OnTriggerEnter2d(Collider2D other)
     {
-        safeAtHome = other.tag == "Oasis";
+        Debug.Log(other.tag);
+        if (other.tag == "Oasis")
+        {
+            safeAtHome = true;
+        }
     }
 
     private void OnTriggerExit2d(Collider2D other)
     {
-        safeAtHome = !(other.tag == "Oasis");
+        Debug.Log(other.tag);
+        if (other.tag == "Oasis")
+        {
+            safeAtHome = false;
+        }
     }
 }
