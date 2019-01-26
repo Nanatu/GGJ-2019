@@ -5,8 +5,11 @@ using UnityEngine;
 public class TreeGrowth : MonoBehaviour
 {
 
-    public float growthRate = 0.4f;
+    public float growthRate = 0.1f;
     private GameObject growthRing;
+
+    public float decayTime = 2f;
+    private float curTime = 0f;
     
     // Start is called before the first frame update
     void Start()
@@ -19,6 +22,19 @@ public class TreeGrowth : MonoBehaviour
     void Update()
     {
         //increase growthRing based on growth rate
+        float scaleX = growthRing.transform.localScale.x + growthRate;
+        float scaleY = growthRing.transform.localScale.y + growthRate;
         
+        growthRing.transform.localScale = new Vector3(scaleX, scaleY);
+        if (curTime <= decayTime)
+        {
+            curTime += Time.deltaTime;
+        }
+        else
+        {
+            curTime = 0;
+            growthRate -= 0.1f;
+        }
+
     }
 }
