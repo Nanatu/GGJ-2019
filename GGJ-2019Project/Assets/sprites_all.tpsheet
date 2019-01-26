@@ -4,18 +4,22 @@
 # To import these sprites into your Unity project, download "TexturePackerImporter":
 # https://www.codeandweb.com/texturepacker/unity
 #
-# $TexturePacker:SmartUpdate:0331b69b21bafe3e169b8a6c683bc030:09fdad969e6b55ef02929d6acdfdd1a6:f683c4e9aa78f29e0ed6c6b94537e31d$
+# $TexturePacker:SmartUpdate:ef6e16c819847a7624efd71e30617409:73a3faf7de2885af1b9694853beacab3:f683c4e9aa78f29e0ed6c6b94537e31d$
 #
 :format=40300
 :texture=sprites_all.png
-:size=128x128
+:size=256x512
 :pivotpoints=enabled
 :borders=disabled
 
-credits-little faces-jern;1;95;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-joel;34;95;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-mamander;67;95;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-met;1;62;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-ratch;34;62;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-woostern;67;62;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-zern;1;29;32;32; 0.5;0.5; 0;0;0;0
+carrier-idle1;1;479;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-jern;34;479;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-joel;67;479;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-mamander;100;479;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-met;133;479;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-ratch;166;479;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-woostern;199;479;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-zern;1;446;32;32; 0.5;0.5; 0;0;0;0
+resource1-neutral;34;458;20;20; 0.5;0.5; 0;0;0;0
+tree-ancientTree;55;278;200;200; 0.5;0.5; 0;0;0;0
+tree-seed;1;252;25;25; 0.5;0.5; 0;0;0;0
