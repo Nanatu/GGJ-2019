@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6365c6bec979c6344abfb418e2aa7b07
+guid: 570ead0c8de66bc48a34bb0dbbbf542c
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Frankfurt
+  fontName: 8BIT WONDER
   fontNames:
-  - Frankfurt
+  - 8BIT WONDER
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
