@@ -5,15 +5,16 @@ using UnityEngine;
 public class BreathMeter : MonoBehaviour
 {
     public float SecondsOfBreath;
+    public float SecondsToPlantSeed;
     public float SecondsToRespawn;
+    public bool isDead = false;
     public Vector2 RespawnPosition;
-    
     private TopDownMovement topDownMovement;
     private float maxBreath;
     private float maxRespawnTimer;
+    private float maxSeedPlantTimer;
     private bool safeAtHome = true;
-    private bool isDead = false;
-
+    
     void Start()
     {
         if (RespawnPosition == null)
@@ -25,22 +26,23 @@ public class BreathMeter : MonoBehaviour
 
     void Update()
     {
-        if (isDead)
+        if (isDead && SecondsToRespawn > 0f)
         {
-            if (SecondsToRespawn > 0f)
-                SecondsToRespawn -= Time.deltaTime;
-            else
-            {
-                isDead = false;
-                this.transform.position = RespawnPosition;
-                SecondsToRespawn = maxRespawnTimer;
-                SecondsOfBreath = maxBreath;
-            }
+            SecondsToRespawn -= Time.deltaTime;
         }
         else
         {
             if (!safeAtHome)
-                SecondsOfBreath -= Time.deltaTime;
+            {
+                if (topDownMovement.IsCarryingSeed)
+                {
+                    SecondsToPlantSeed -= Time.deltaTime;
+                }
+                else
+                {
+                    SecondsOfBreath -= Time.deltaTime;
+                }
+            }
             else
             {
                 if (SecondsOfBreath < maxBreath)
@@ -48,17 +50,29 @@ public class BreathMeter : MonoBehaviour
                     SecondsOfBreath += Time.deltaTime * SecondsOfBreath;
                 }
             }
-
-            if (SecondsOfBreath > maxBreath)
-                SecondsOfBreath = maxBreath;
-            else if (SecondsOfBreath < 0f)
-            {
-                SecondsOfBreath = 0f;
-                isDead = true;
-            }
         }
 
-        topDownMovement.enabled = !isDead;
+        if (SecondsOfBreath > maxBreath)
+        {
+            SecondsOfBreath = maxBreath;
+        }
+        if (SecondsOfBreath < 0f)
+        {
+            SecondsOfBreath = 0f;
+            isDead = true;
+        }
+        if (SecondsToPlantSeed < 0f)
+        {
+            topDownMovement.IsCarryingSeed = false;
+            SecondsToPlantSeed = maxSeedPlantTimer;
+        }
+        if (SecondsToRespawn < 0f)
+        {
+            isDead = false;
+            this.transform.position = RespawnPosition;
+            SecondsToRespawn = maxRespawnTimer;
+            SecondsOfBreath = maxBreath;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
