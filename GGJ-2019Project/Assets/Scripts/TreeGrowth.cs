@@ -30,10 +30,14 @@ public class TreeGrowth : MonoBehaviour
         {
             curTime += Time.deltaTime;
         }
-        else
+        else if (growthRate > 0.0f)
         {
             curTime = 0;
             growthRate -= 0.1f;
+            if (growthRate < 0.0f)
+            {
+                growthRate = 0;
+            }
         }
 
     }
