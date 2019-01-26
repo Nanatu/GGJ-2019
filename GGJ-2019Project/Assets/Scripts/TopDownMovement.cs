@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class TopDownMovement : MonoBehaviour
 {
+    public enum PlayerState { Walking, Standing, Flinching, Attacking, }
+    public enum Facing { North, South, East, West };
+
     public static TopDownMovement instance;
-    public Rigidbody2D rb2D;               //The Rigidbody2D component attached to this object.
+    public Facing facing;
+    public Rigidbody2D rb2D;
     public BoxCollider2D bc2D;
     public Animator animator;
     public SpriteRenderer spriteRenderer;
-    // public LayerMask blockingLayer;
-    public float speed = 1;             //Floating point variable to store the player's movement speed.
 
+    public float speed = 1;
     public bool busyHandlingInput = false;
-
-    public enum PlayerState { Walking, Standing, Flinching, Attacking, }
-    public enum Facing { North, South, East, West };
-    public Facing facing;
 
     public void Awake()
     {
@@ -26,7 +25,6 @@ public class TopDownMovement : MonoBehaviour
             Destroy(gameObject);
     }
 
-    // Use this for initialization
     protected virtual void Start()
     {
         rb2D = gameObject.GetComponent<Rigidbody2D>();
@@ -35,7 +33,6 @@ public class TopDownMovement : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    //FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here.
     public virtual void FixedUpdate()
     {
         HandleInput();
@@ -43,10 +40,7 @@ public class TopDownMovement : MonoBehaviour
 
     public void HandleInput()
     {
-        //if (!this.GetComponent<PlayerStatus>().IsDead)
-        //{
         HandleMovementInput();
-        //}
     }
 
     public void HandleMovementInput()
@@ -91,7 +85,6 @@ public class TopDownMovement : MonoBehaviour
             animator.SetFloat("speed", 0);
         }
 
-        //Call base triggers handler
         SetTriggers();
     }
 
@@ -109,5 +102,4 @@ public class TopDownMovement : MonoBehaviour
             spriteRenderer.flipX = true;
         }
     }
-
 }
