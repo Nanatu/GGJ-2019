@@ -164,6 +164,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1914062025584291184, guid: c96e0965236ef8649b40d90d29caf4c3,
+        type: 3}
+      propertyPath: atHome
+      value: 
+      objectReference: {fileID: 1142280010}
+    - target: {fileID: 1914062025584291184, guid: c96e0965236ef8649b40d90d29caf4c3,
+        type: 3}
+      propertyPath: awayHome
+      value: 
+      objectReference: {fileID: 1142280009}
     - target: {fileID: 3752828736268287649, guid: c96e0965236ef8649b40d90d29caf4c3,
         type: 3}
       propertyPath: m_Name
@@ -226,29 +236,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c96e0965236ef8649b40d90d29caf4c3, type: 3}
---- !u!1 &1142280001 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3752828736963373354, guid: c96e0965236ef8649b40d90d29caf4c3,
+--- !u!82 &1142280009 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8898344799198725898, guid: c96e0965236ef8649b40d90d29caf4c3,
     type: 3}
   m_PrefabInstance: {fileID: 1051054042}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1142280008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!82 &1142280010 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7231806332065544238, guid: c96e0965236ef8649b40d90d29caf4c3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1051054042}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142280001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fa0deeaa1afe3a41b2143b951b9d323, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SecondsOfBreath: 10
-  SecondsToPlantSeed: 10
-  SecondsToRespawn: 3
-  isDead: 0
-  RespawnPosition: {x: 0, y: 0}
 --- !u!1001 &753910087421347487
 PrefabInstance:
   m_ObjectHideFlags: 0
