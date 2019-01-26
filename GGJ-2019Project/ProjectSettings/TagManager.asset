@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Oasis
+  - PickUp
   layers:
   - Default
   - TransparentFX

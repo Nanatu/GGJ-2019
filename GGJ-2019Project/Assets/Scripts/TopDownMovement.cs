@@ -22,6 +22,7 @@ public class TopDownMovement : MonoBehaviour
     public bool IsCarryingSeed = false;
     public float CameraZoomSpeed = 2;
     public bool busyHandlingInput = false;
+    public int numOfResources = 0;
 
     public void Awake()
     {
@@ -128,5 +129,16 @@ public class TopDownMovement : MonoBehaviour
         {
             spriteRenderer.flipX = true;
         }
+    }
+
+   
+    void OnTriggerEnter2D(Collider2D other) 
+    {
+        //Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...
+        if (other.gameObject.CompareTag("PickUp"))
+                {
+                      other.gameObject.SetActive(false);
+                      numOfResources++;
+                }
     }
 }
