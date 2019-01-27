@@ -133,7 +133,8 @@ public class TopDownMovement : MonoBehaviour
             {
                 seed.transform.parent = gameObject.transform;
                 seed.GetComponent<PolygonCollider2D>().enabled = false;
-                seed.transform.localPosition.Set(0,0,0);
+                
+                seed.transform.localPosition = Vector3.zero;
             }
         }  
     }
