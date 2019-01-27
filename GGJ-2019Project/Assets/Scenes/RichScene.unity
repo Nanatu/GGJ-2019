@@ -506,7 +506,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.53, y: 0.07}
-    oldSize: {x: 6.25, y: 6.25}
+    oldSize: {x: 2, y: 2}
     newSize: {x: 6.3, y: 6.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -564,20 +564,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: CarrierPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 3752828736268287649, guid: c96e0965236ef8649b40d90d29caf4c3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3752828736268287650, guid: c96e0965236ef8649b40d90d29caf4c3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.32
+      value: -0.618
       objectReference: {fileID: 0}
     - target: {fileID: 3752828736268287650, guid: c96e0965236ef8649b40d90d29caf4c3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.82
+      value: 0.791
       objectReference: {fileID: 0}
     - target: {fileID: 3752828736268287650, guid: c96e0965236ef8649b40d90d29caf4c3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.039222166
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3752828736268287650, guid: c96e0965236ef8649b40d90d29caf4c3,
         type: 3}
@@ -623,6 +628,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3752828737481251235, guid: c96e0965236ef8649b40d90d29caf4c3,
+        type: 3}
+      propertyPath: orthographic size
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c96e0965236ef8649b40d90d29caf4c3, type: 3}
@@ -1333,7 +1343,32 @@ PrefabInstance:
     - target: {fileID: 6334472263719593559, guid: da3b63aaff5603446a13f2dc9860c1df,
         type: 3}
       propertyPath: maxGrowth
-      value: 200
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334472263719593559, guid: da3b63aaff5603446a13f2dc9860c1df,
+        type: 3}
+      propertyPath: sproutStage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334472263719593559, guid: da3b63aaff5603446a13f2dc9860c1df,
+        type: 3}
+      propertyPath: seedlingStage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334472263719593559, guid: da3b63aaff5603446a13f2dc9860c1df,
+        type: 3}
+      propertyPath: tweenStage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334472263719593559, guid: da3b63aaff5603446a13f2dc9860c1df,
+        type: 3}
+      propertyPath: adultStage
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334472263719593559, guid: da3b63aaff5603446a13f2dc9860c1df,
+        type: 3}
+      propertyPath: ancientStage
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da3b63aaff5603446a13f2dc9860c1df, type: 3}
