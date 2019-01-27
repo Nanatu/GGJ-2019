@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2208027652079525676}
   - component: {fileID: 5882533061813365307}
   - component: {fileID: 5423977888331423883}
-  - component: {fileID: 2838481826867211531}
+  - component: {fileID: 989053121195690115}
   m_Layer: 0
   m_Name: Seed
   m_TagString: Seed
@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4144171560505321271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.7647997, y: 1.9361925, z: -0.07172904}
+  m_LocalScale: {x: 1, y: 0.9581, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d493264c7a25a4242a6b5e6eaaa3a3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!60 &2838481826867211531
+--- !u!60 &989053121195690115
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,14 +103,14 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.32, y: 0.64}
+    oldSize: {x: 1, y: 2}
     newSize: {x: 0.25, y: 0.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -118,15 +118,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.04842631, y: 0.6100366}
-      - {x: 0.0017248103, y: 0.63876104}
-      - {x: -0.028838038, y: 0.62322044}
-      - {x: -0.070823416, y: 0.60243356}
-      - {x: -0.118838035, y: 0.55921316}
-      - {x: -0.11524244, y: 0.41797805}
-      - {x: -0.04161022, y: 0.36475754}
-      - {x: 0.04760285, y: 0.36475757}
-      - {x: 0.070375144, y: 0.37194878}
-      - {x: 0.09763951, y: 0.3915737}
-      - {x: 0.11842631, y: 0.43479416}
-      - {x: 0.107639425, y: 0.5568161}
+    - - {x: 0.21875, y: 2}
+      - {x: -0.1875, y: 2}
+      - {x: -0.28125, y: 1.96875}
+      - {x: -0.46875, y: 1.78125}
+      - {x: -0.46875, y: 1.25}
+      - {x: -0.15625, y: 1.03125}
+      - {x: 0.15625, y: 1.03125}
+      - {x: 0.40625, y: 1.15625}
+      - {x: 0.4375, y: 1.34375}
+      - {x: 0.4375, y: 1.78125}
