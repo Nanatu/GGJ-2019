@@ -18,6 +18,8 @@ public class TopDownMovement : MonoBehaviour
 
     public InventoryManager inventory;
 
+    private GameObject seed;
+
     private float speed = 1;
     public float NormalSpeed = 1;
     public float CarryingSpeed = 2;
@@ -63,6 +65,7 @@ public class TopDownMovement : MonoBehaviour
     {
         HandleMovementInput();
         HandleCameraInput();
+        HandleActionInput();
     }
 
     public void HandleMovementInput()
@@ -121,6 +124,19 @@ public class TopDownMovement : MonoBehaviour
         }
     }
 
+    public void HandleActionInput()
+    {
+        if(Input.GetKey(KeyCode.E))
+        {
+            //pick up seed
+            if (seed)
+            {
+                seed.transform.parent = gameObject.transform;
+                seed.GetComponent<PolygonCollider2D>().enabled = false;
+            }
+        }  
+    }
+
     public virtual void SetTriggers()
     {
         animator.SetFloat("YSpeed", rb2D.velocity.y);
@@ -143,7 +159,7 @@ public class TopDownMovement : MonoBehaviour
         if (other.gameObject.CompareTag("PickUp"))
         {
             GameObject otherGameObject = other.gameObject;
-            //other.gameObject.SetActive(false);
+           
             otherGameObject.GetComponent<BoxCollider2D>().enabled = false;
             otherGameObject.GetComponent<Orbit>().IsActive = true;
             otherGameObject.transform.parent = inventory.transform;
@@ -163,6 +179,24 @@ public class TopDownMovement : MonoBehaviour
                 }
                 inventory.inventoriedResources.Clear();
             }
+        }
+        
+        if (other.gameObject.CompareTag("Seed"))
+        {
+            GameObject otherGameObject = other.gameObject;
+          
+            //activate Seed text
+            seed = otherGameObject;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Seed"))
+        {
+            GameObject otherGameObject = other.gameObject;
+            //activate Seed text
+            seed = null;
         }
     }
 }
