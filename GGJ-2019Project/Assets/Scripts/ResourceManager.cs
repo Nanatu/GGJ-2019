@@ -8,6 +8,9 @@ public class ResourceManager : MonoBehaviour
     
     public List<GameObject> resources;
     public GameObject seed;
+    public GameObject tree;
+    
+    
     private List<GameObject> spawnedResources;
 
     public int startingResources = 30;

@@ -15,7 +15,13 @@ public class BreathMeter : MonoBehaviour
     private float maxRespawnTimer;
     private float maxSeedPlantTimer;
     private bool safeAtHome = true;
-    
+
+    public bool onSafeAtHome
+    {
+        get => safeAtHome;
+        set => safeAtHome = value;
+    }
+
     void Start()
     {
         if (RespawnPosition == null)
@@ -81,6 +87,7 @@ public class BreathMeter : MonoBehaviour
         }
     }
 
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Oasis")
@@ -96,4 +103,6 @@ public class BreathMeter : MonoBehaviour
             safeAtHome = false;
         }
     }
+    
+    
 }
