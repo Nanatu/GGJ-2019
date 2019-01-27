@@ -62,6 +62,5 @@ public class ResourceManager : MonoBehaviour
         float y = Random.Range(MinY,MaxY);
         
         return new Vector3(x,y,0);
-    }
-   
+    }  
 }

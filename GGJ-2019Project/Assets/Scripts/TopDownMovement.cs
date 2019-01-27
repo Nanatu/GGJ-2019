@@ -128,7 +128,6 @@ public class TopDownMovement : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.E))
         {
-            //pick up seed
             if (seed)
             {
                 seed.transform.parent = gameObject.transform;
@@ -156,7 +155,6 @@ public class TopDownMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        //Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...
         if (other.gameObject.CompareTag("PickUp"))
         {
             GameObject otherGameObject = other.gameObject;
@@ -185,8 +183,6 @@ public class TopDownMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Seed"))
         {
             GameObject otherGameObject = other.gameObject;
-          
-            //activate Seed text
             seed = otherGameObject;
         }
     }
@@ -196,7 +192,6 @@ public class TopDownMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Seed"))
         {
             GameObject otherGameObject = other.gameObject;
-            //activate Seed text
             seed = null;
         }
     }
