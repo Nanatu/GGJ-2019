@@ -225,14 +225,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SecondsOfBreath: 10
-  SecondsToPlantSeed: 10
+  SecondsToPlantSeed: 5
   SecondsToRespawn: 3
   isDead: 0
   RespawnPosition: {x: 0, y: 0}
   vignette: {fileID: 0}
   maxSeedPlantTimer: 0
   safeAtHome: 1
-  visionSpeed: 0.045
+  visionSpeed: 0.035
 --- !u!114 &1914062025584291184
 MonoBehaviour:
   m_ObjectHideFlags: 0
