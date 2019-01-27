@@ -72,28 +72,32 @@ public class TopDownMovement : MonoBehaviour
     {
         Vector2 velocity = new Vector2(0, 0);
 
-        if (Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow))
+        if ((Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow)) ||
+            (Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S)))
         {
             velocity.Set(velocity.x, speed);
             facing = Facing.North;
         }
-        if (Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.UpArrow))
+        if ((Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.UpArrow)) ||
+            (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W)))
         {
             velocity.Set(velocity.x, -(speed));
             facing = Facing.South;
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
+        if ((Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow)) ||
+            (Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)))
         {
             velocity.Set(-(speed), velocity.y);
             facing = Facing.West;
         }
-        if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow))
+        if ((Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow)) ||
+            (Input.GetKey(KeyCode.D)) && !Input.GetKey(KeyCode.A))
         {
             velocity.Set(speed, velocity.y);
             facing = Facing.East;
         }
-        
+
         GetComponent<Animator>().SetBool("isSpawning", false);
 
         if (breathMeter.isDead)
@@ -128,9 +132,9 @@ public class TopDownMovement : MonoBehaviour
 
     public void HandleActionInput()
     {
-        if(Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            
+
             if (IsCarryingSeed)
             {
                 Vector3 currentPosition = gameObject.transform.position;
@@ -140,18 +144,18 @@ public class TopDownMovement : MonoBehaviour
                     PlantTree(currentPosition);
                 }
             }
-            
-            
+
+
             //pick up seed
             if (seed && !IsCarryingSeed)
             {
                 seed.transform.parent = gameObject.transform;
                 seed.GetComponent<PolygonCollider2D>().enabled = false;
-                
+
                 seed.transform.localPosition = Vector3.zero;
                 IsCarryingSeed = true;
             }
-        }  
+        }
     }
 
     public void PlantTree(Vector3 position)
@@ -187,7 +191,7 @@ public class TopDownMovement : MonoBehaviour
         if (other.gameObject.CompareTag("PickUp"))
         {
             GameObject otherGameObject = other.gameObject;
-           
+
             otherGameObject.GetComponent<BoxCollider2D>().enabled = false;
             otherGameObject.GetComponent<Orbit>().IsActive = true;
             otherGameObject.transform.parent = inventory.transform;
@@ -208,7 +212,7 @@ public class TopDownMovement : MonoBehaviour
                 inventory.inventoriedResources.Clear();
             }
         }
-        
+
         if (other.gameObject.CompareTag("Seed"))
         {
             GameObject otherGameObject = other.gameObject;
