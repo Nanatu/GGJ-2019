@@ -4,7 +4,7 @@
 # To import these sprites into your Unity project, download "TexturePackerImporter":
 # https://www.codeandweb.com/texturepacker/unity
 #
-# $TexturePacker:SmartUpdate:452825e8992a883de4f336659dccee25:bb998d0c2044a949d26db6bec3e46c06:f683c4e9aa78f29e0ed6c6b94537e31d$
+# $TexturePacker:SmartUpdate:f4068fae1416af2814700111b1e68fbb:bb998d0c2044a949d26db6bec3e46c06:f683c4e9aa78f29e0ed6c6b94537e31d$
 #
 :format=40300
 :texture=sprites_all.png
@@ -90,7 +90,7 @@ resource1-resource_ore2;361;948;11;9; 0.5;0.5; 0;0;0;0
 resource1-resource_ore3;373;948;5;9; 0.5;0.5; 0;0;0;0
 tree-adultTree;1;724;200;200; 0.53;0.06999999999999995; 0;0;0;0
 tree-ancientTree;202;724;200;200; 0.53;0.06999999999999995; 0;0;0;0
-tree-seed;403;860;32;64; 0.5;0.5; 0;0;0;0
+tree-seed;403;860;32;64; 0.5;0; 0;0;0;0
 tree-seedling;1;523;200;200; 0.53;0.06999999999999995; 0;0;0;0
 tree-sprout;202;523;200;200; 0.53;0.06999999999999995; 0;0;0;0
 tree-tweenTree;1;322;200;200; 0.53;0.06999999999999995; 0;0;0;0
