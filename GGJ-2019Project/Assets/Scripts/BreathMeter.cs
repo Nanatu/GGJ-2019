@@ -43,6 +43,7 @@ public class BreathMeter : MonoBehaviour
         {
             SecondsToRespawn -= Time.deltaTime;
             ShrinkVision();
+            GetComponent<Animator>().SetBool("isDead", true);
         }
         else
         {
@@ -80,15 +81,17 @@ public class BreathMeter : MonoBehaviour
         }
         if (SecondsToPlantSeed < 0f)
         {
-            topDownMovement.PlantTree(transform.localPosition);
+            topDownMovement.PlantTree(transform.position);
         }
         if (SecondsToRespawn < 0f)
         {
             isDead = false;
+            GetComponent<Animator>().SetBool("isDead", false);
             this.transform.position = RespawnPosition;
             SecondsToRespawn = maxRespawnTimer;
             SecondsOfBreath = maxBreath;
             FullVision();
+            GetComponent<Animator>().SetBool("isSpawning", true);
         }
     }
 

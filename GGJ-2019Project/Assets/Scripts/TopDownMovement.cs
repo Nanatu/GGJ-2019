@@ -93,7 +93,7 @@ public class TopDownMovement : MonoBehaviour
             velocity.Set(speed, velocity.y);
             facing = Facing.East;
         }
-
+        
         if (breathMeter.isDead)
             velocity.Set(0, 0);
 
@@ -131,7 +131,7 @@ public class TopDownMovement : MonoBehaviour
             
             if (IsCarryingSeed)
             {
-                Vector3 currentPosition = gameObject.transform.localPosition;
+                Vector3 currentPosition = gameObject.transform.position;
 
                 if (!GetComponent<BreathMeter>().onSafeAtHome)
                 {

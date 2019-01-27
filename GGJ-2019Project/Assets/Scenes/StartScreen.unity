@@ -1266,11 +1266,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startAnimationDelay: 0.5
   nextSceneDelay: 0.5
-  gameStartSceneIndex: 0
-  creditsSceneIndex: 1
+  gameStartSceneIndex: 1
+  creditsSceneIndex: 2
   showHideThing: {fileID: 0}
   mainThing: {fileID: 0}
-  sceneJumpAIndex: 2
+  sceneJumpAIndex: 3
   TutorialSlideshow: []
 --- !u!1 &1807563024
 GameObject:

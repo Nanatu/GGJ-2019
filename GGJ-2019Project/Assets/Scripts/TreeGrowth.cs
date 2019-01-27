@@ -29,6 +29,8 @@ public class TreeGrowth : MonoBehaviour
     private bool madeSeed = false;
 
     private ResourceManager resourceManager;
+
+    public float resourceDefault = 0.1f;
     
     // Start is called before the first frame update
     void Start()
@@ -116,7 +118,7 @@ public class TreeGrowth : MonoBehaviour
     //Quickly add a Resource
     public void AddResource()
     {
-        AddResource(0.1f);
+        AddResource(resourceDefault);
     }
 
     private void SpawnSeed()
