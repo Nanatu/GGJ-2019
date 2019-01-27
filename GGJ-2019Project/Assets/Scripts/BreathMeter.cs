@@ -80,7 +80,7 @@ public class BreathMeter : MonoBehaviour
         }
         if (SecondsToPlantSeed < 0f)
         {
-            topDownMovement.PlantTree(transform.localPosition);
+            topDownMovement.PlantTree(transform.position);
         }
         if (SecondsToRespawn < 0f)
         {

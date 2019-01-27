@@ -299,18 +299,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growthRate: 0.5
-  decayTime: 2
-  maxGrowth: 50
+  decayTime: 0.15
+  maxGrowth: 55
   sproutStage: 5
   seedlingStage: 10
-  tweenStage: 20
+  tweenStage: 15
   adultStage: 30
-  ancientStage: 50
+  ancientStage: 45
   sprout: {fileID: 21300030, guid: 38363ceb212a60c4abdb7ef70baab8cf, type: 3}
   seedling: {fileID: 21300028, guid: 38363ceb212a60c4abdb7ef70baab8cf, type: 3}
   tween: {fileID: 21300032, guid: 38363ceb212a60c4abdb7ef70baab8cf, type: 3}
   adult: {fileID: 21300026, guid: 38363ceb212a60c4abdb7ef70baab8cf, type: 3}
   ancient: {fileID: 21300020, guid: 38363ceb212a60c4abdb7ef70baab8cf, type: 3}
+  resourceDefault: 0.15
 --- !u!61 &576638584467804868
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -429,7 +430,7 @@ PrefabInstance:
     - target: {fileID: 6334472263719593559, guid: da3b63aaff5603446a13f2dc9860c1df,
         type: 3}
       propertyPath: maxGrowth
-      value: 50
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 6334472263719593559, guid: da3b63aaff5603446a13f2dc9860c1df,
         type: 3}
@@ -444,7 +445,7 @@ PrefabInstance:
     - target: {fileID: 6334472263719593559, guid: da3b63aaff5603446a13f2dc9860c1df,
         type: 3}
       propertyPath: tweenStage
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6334472263719593559, guid: da3b63aaff5603446a13f2dc9860c1df,
         type: 3}
@@ -454,7 +455,17 @@ PrefabInstance:
     - target: {fileID: 6334472263719593559, guid: da3b63aaff5603446a13f2dc9860c1df,
         type: 3}
       propertyPath: ancientStage
-      value: 50
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334472263719593559, guid: da3b63aaff5603446a13f2dc9860c1df,
+        type: 3}
+      propertyPath: decayTime
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334472263719593559, guid: da3b63aaff5603446a13f2dc9860c1df,
+        type: 3}
+      propertyPath: resourceDefault
+      value: 0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da3b63aaff5603446a13f2dc9860c1df, type: 3}

@@ -131,7 +131,7 @@ public class TopDownMovement : MonoBehaviour
             
             if (IsCarryingSeed)
             {
-                Vector3 currentPosition = gameObject.transform.localPosition;
+                Vector3 currentPosition = gameObject.transform.position;
 
                 if (!GetComponent<BreathMeter>().onSafeAtHome)
                 {
