@@ -13,8 +13,8 @@ public class BreathMeter : MonoBehaviour
     private TopDownMovement topDownMovement;
     private float maxBreath;
     private float maxRespawnTimer;
-    private float maxSeedPlantTimer;
-    private bool safeAtHome = true;
+    public float maxSeedPlantTimer;
+    public bool safeAtHome = true;
 
     public bool onSafeAtHome
     {
@@ -28,6 +28,7 @@ public class BreathMeter : MonoBehaviour
             RespawnPosition = new Vector2(0f, 0f);
         maxBreath = SecondsOfBreath;
         maxRespawnTimer = SecondsToRespawn;
+        maxSeedPlantTimer = SecondsToPlantSeed;
         topDownMovement = GetComponent<TopDownMovement>();
         vignette = GameObject.Find("Vignette");
     }
@@ -52,10 +53,6 @@ public class BreathMeter : MonoBehaviour
                 else
                 {
                     SecondsOfBreath -= Time.deltaTime;
-                    if(vignette.transform.localScale.x > 1.1)
-                        vignette.transform.localScale -= new Vector3(vignetteScaleX,0,0);
-                    if(vignette.transform.localScale.y > 1.6)
-                        vignette.transform.localScale -= new Vector3(0,vignetteScaleY,0);
                 }
             }
             else
@@ -63,11 +60,7 @@ public class BreathMeter : MonoBehaviour
                 if (SecondsOfBreath < maxBreath)
                 {
                     SecondsOfBreath += Time.deltaTime * SecondsOfBreath;
-                    if(vignette.transform.localScale.x > 1.1)
-                        vignette.transform.localScale += new Vector3(vignetteScaleX,0,0);
-                    if(vignette.transform.localScale.y > 1.6)
-                        vignette.transform.localScale += new Vector3(0,vignetteScaleY,0);
-                }   
+                }
             }
         }
 
@@ -82,8 +75,7 @@ public class BreathMeter : MonoBehaviour
         }
         if (SecondsToPlantSeed < 0f)
         {
-            topDownMovement.IsCarryingSeed = false;
-            SecondsToPlantSeed = maxSeedPlantTimer;
+            topDownMovement.PlantTree(transform.localPosition);
         }
         if (SecondsToRespawn < 0f)
         {
@@ -94,13 +86,12 @@ public class BreathMeter : MonoBehaviour
         }
     }
 
-
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.tag == "Oasis")
-        {
+        if (other.tag == "Oasis" || other.tag == "Tree" || other.tag == "Seed")
             safeAtHome = true;
-        }
+        else
+            safeAtHome = false;
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -110,6 +101,4 @@ public class BreathMeter : MonoBehaviour
             safeAtHome = false;
         }
     }
-    
-    
 }
