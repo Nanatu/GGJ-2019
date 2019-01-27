@@ -263,16 +263,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3752828737481251245, guid: c96e0965236ef8649b40d90d29caf4c3,
-        type: 3}
-      propertyPath: zoomSpeed
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3752828737481251245, guid: c96e0965236ef8649b40d90d29caf4c3,
-        type: 3}
-      propertyPath: maxZoomDistance
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c96e0965236ef8649b40d90d29caf4c3, type: 3}
 --- !u!1 &1360485228
@@ -421,21 +411,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8571794356011769517, guid: d564dc12a18b5424da6376075a4f6150,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 862.53
-      objectReference: {fileID: 0}
-    - target: {fileID: 8571794356011769517, guid: d564dc12a18b5424da6376075a4f6150,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8571794356011769517, guid: d564dc12a18b5424da6376075a4f6150,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8571794356011769516, guid: d564dc12a18b5424da6376075a4f6150,
         type: 3}

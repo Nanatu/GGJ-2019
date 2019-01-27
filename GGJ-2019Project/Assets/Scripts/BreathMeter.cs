@@ -16,6 +16,8 @@ public class BreathMeter : MonoBehaviour
     public float maxSeedPlantTimer;
     public bool safeAtHome = true;
 
+    public float visionSpeed = 0.1f;
+    
     public bool onSafeAtHome
     {
         get => safeAtHome;
@@ -93,13 +95,11 @@ public class BreathMeter : MonoBehaviour
     private void IncreaseVision()
     {
         Vector3 scale = vignette.transform.localScale;
-        if (scale.x < 12 && scale.y < 12)
+        if (scale.x < 24 && scale.y < 24)
         {
-            var vignetteScaleX = Time.deltaTime;
-            var vignetteScaleY = Time.deltaTime;
 
 
-            vignette.transform.localScale += new Vector3(vignetteScaleX, vignetteScaleY, 0);
+            vignette.transform.localScale += new Vector3(visionSpeed, visionSpeed, 0);
         }
 
     }
@@ -110,16 +110,14 @@ public class BreathMeter : MonoBehaviour
 
         if (scale.x > 1.5f && scale.y > 1.5f)
         {
-            var vignetteScaleX = Time.deltaTime;
-            var vignetteScaleY = Time.deltaTime;
 
-            vignette.transform.localScale -= new Vector3(vignetteScaleX, vignetteScaleY, 0);
+            vignette.transform.localScale -= new Vector3(visionSpeed, visionSpeed, 0);
         }
     }
 
     private void FullVision()
     {
-        vignette.transform.localScale = new Vector3(12, 12, 0);
+        vignette.transform.localScale = new Vector3(24, 24, 0);
     }
 
     private void OnTriggerStay2D(Collider2D other)

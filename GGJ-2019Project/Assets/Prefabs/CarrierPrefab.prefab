@@ -184,7 +184,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.32, y: 0.32}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -230,6 +230,9 @@ MonoBehaviour:
   isDead: 0
   RespawnPosition: {x: 0, y: 0}
   vignette: {fileID: 0}
+  maxSeedPlantTimer: 0
+  safeAtHome: 1
+  visionSpeed: 0.04
 --- !u!114 &1914062025584291184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -534,8 +537,8 @@ MonoBehaviour:
   zoomDirection: 1
   smoothTimeX: 0.3
   smoothTimeY: 0.3
-  zoomSpeed: 1
-  maxZoomDistance: 50
+  zoomSpeed: 0.1
+  maxZoomDistance: 5
   isZooming: 0
   player: {fileID: 3752828736963373354}
   mainCamera: {fileID: 0}

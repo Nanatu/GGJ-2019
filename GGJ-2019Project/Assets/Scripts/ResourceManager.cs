@@ -9,6 +9,8 @@ public class ResourceManager : MonoBehaviour
     public List<GameObject> resources;
     public GameObject seed;
     public GameObject tree;
+
+    private GameObject carrier;
     
     
     private List<GameObject> spawnedResources;
@@ -24,24 +26,17 @@ public class ResourceManager : MonoBehaviour
     //for 3d you have z position
     public float MinZ = 0;
     public float MaxZ = 10;
+
+    public float xRange = 10;
+    public float yRange = 10;
     
     
     // Start is called before the first frame update
     void Start()
     {
         spawnedResources = new List<GameObject>();
-        int resourceCount = resources.Count;
+        carrier = GameObject.FindWithTag("Player").gameObject;
         
-        GameObject carrier = GameObject.FindWithTag("Player").gameObject;
-        for (int i = 0; i < startingResources; i++)
-        {
-            int randomResource = Random.Range(0, resourceCount -1);
-            Vector3 randomLocation = GenerateRandomLocation2D();
-            GameObject newResource = Instantiate(resources[randomResource], randomLocation, Quaternion.identity);
-            newResource.transform.parent = gameObject.transform;
-            newResource.GetComponent<Orbit>().target = carrier.transform;
-            spawnedResources.Add(newResource);
-        }
     }
 
     // Update is called once per frame
@@ -65,5 +60,27 @@ public class ResourceManager : MonoBehaviour
         float y = Random.Range(MinY,MaxY);
         
         return new Vector3(x,y,0);
-    }  
+    }
+    
+    private  Vector3 GenerateRandomLocation2D(Vector3 spawnLocation)
+    {
+        float x = Random.Range(spawnLocation.x - xRange, spawnLocation.x + xRange);
+        float y = Random.Range(spawnLocation.y - yRange ,spawnLocation.y + yRange);
+        
+        return new Vector3(x,y,0);
+    }
+
+    public void SpawnResources(Vector3 spawnLocation)
+    {
+        for (int i = 0; i < startingResources; i++)
+        {
+            int randomResource = Random.Range(0, resources.Count -1);
+            Vector3 randomLocation = GenerateRandomLocation2D(spawnLocation);
+            GameObject newResource = Instantiate(resources[randomResource], randomLocation, Quaternion.identity);
+            newResource.transform.parent = gameObject.transform;
+            newResource.GetComponent<Orbit>().target = carrier.transform;
+            spawnedResources.Add(newResource);
+        }
+        
+    }
 }
