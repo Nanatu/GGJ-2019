@@ -132,9 +132,11 @@ public class TopDownMovement : MonoBehaviour
             if (IsCarryingSeed)
             {
                 Vector3 currentPosition = gameObject.transform.localPosition;
-                
-                //check if too close to another tree
-                PlantTree(currentPosition);
+
+                if (!GetComponent<BreathMeter>().onSafeAtHome)
+                {
+                    PlantTree(currentPosition);
+                }
             }
             
             
@@ -152,8 +154,14 @@ public class TopDownMovement : MonoBehaviour
 
     public void PlantTree(Vector3 position)
     {
-        GameObject tree = GameObject.Find("ResourceManager").GetComponent<ResourceManager>().tree;
-        Instantiate(tree, position, Quaternion.identity);
+        if (IsCarryingSeed)
+        {
+            IsCarryingSeed = false;
+            GameObject tree = GameObject.Find("ResourceManager").GetComponent<ResourceManager>().tree;
+            Instantiate(tree, position, Quaternion.identity);
+            Destroy(seed);
+            seed = null;
+        }
     }
 
     public virtual void SetTriggers()
