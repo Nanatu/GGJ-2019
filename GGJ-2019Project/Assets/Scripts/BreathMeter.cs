@@ -9,6 +9,7 @@ public class BreathMeter : MonoBehaviour
     public float SecondsToRespawn;
     public bool isDead = false;
     public Vector2 RespawnPosition;
+    public GameObject vignette;
     private TopDownMovement topDownMovement;
     private float maxBreath;
     private float maxRespawnTimer;
@@ -22,10 +23,13 @@ public class BreathMeter : MonoBehaviour
         maxBreath = SecondsOfBreath;
         maxRespawnTimer = SecondsToRespawn;
         topDownMovement = GetComponent<TopDownMovement>();
+        vignette = GameObject.Find("Vignette");
     }
 
     void Update()
     {
+        var vignetteScale = Time.deltaTime * (SecondsOfBreath);
+
         if (isDead && SecondsToRespawn > 0f)
         {
             SecondsToRespawn -= Time.deltaTime;
@@ -41,6 +45,7 @@ public class BreathMeter : MonoBehaviour
                 else
                 {
                     SecondsOfBreath -= Time.deltaTime;
+                    vignette.transform.localScale -= new Vector3(vignetteScale,vignetteScale,0);
                 }
             }
             else
@@ -48,7 +53,8 @@ public class BreathMeter : MonoBehaviour
                 if (SecondsOfBreath < maxBreath)
                 {
                     SecondsOfBreath += Time.deltaTime * SecondsOfBreath;
-                }
+                    vignette.transform.localScale += new Vector3(vignetteScale,vignetteScale,0);
+                }   
             }
         }
 

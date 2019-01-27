@@ -142,12 +142,4 @@ public class TopDownMovement : MonoBehaviour
             numOfResources++;
         }
     }
-
-    void OnTriggerStay2D(Collider2D other)
-    {
-        if(other.gameObject.CompareTag("seed"))
-        {
-
-        }
-    }
 }

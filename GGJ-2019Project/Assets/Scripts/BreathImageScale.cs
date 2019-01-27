@@ -5,6 +5,7 @@ using UnityEngine;
 public class BreathImageScale : MonoBehaviour
 {
     public Camera mainCamera;
+    public 
 
     void Start()
     {
