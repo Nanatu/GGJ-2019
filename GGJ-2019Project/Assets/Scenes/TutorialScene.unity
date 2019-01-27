@@ -142,6 +142,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: tutorial screen assets
       objectReference: {fileID: 0}
+    - target: {fileID: 3676511450622164552, guid: 69289edeb1017f64195c7ef58ea363e1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3676511450607665457, guid: 69289edeb1017f64195c7ef58ea363e1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3676511449779868036, guid: 69289edeb1017f64195c7ef58ea363e1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3676511449247485355, guid: 69289edeb1017f64195c7ef58ea363e1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -253,21 +268,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3676511449702175821, guid: 69289edeb1017f64195c7ef58ea363e1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3676511449779868036, guid: 69289edeb1017f64195c7ef58ea363e1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3676511450607665457, guid: 69289edeb1017f64195c7ef58ea363e1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3676511450622164552, guid: 69289edeb1017f64195c7ef58ea363e1,
         type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -403,6 +403,7 @@ GameObject:
   - component: {fileID: 994917345}
   - component: {fileID: 994917344}
   - component: {fileID: 994917347}
+  - component: {fileID: 994917348}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -493,6 +494,18 @@ MonoBehaviour:
   z: {fileID: 91728272}
   zImage: {fileID: 308021310}
   state: 0
+--- !u!114 &994917348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994917343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb9ae6a345f26e241bc374759dc70c2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1115184761 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3676511450650644489, guid: 69289edeb1017f64195c7ef58ea363e1,

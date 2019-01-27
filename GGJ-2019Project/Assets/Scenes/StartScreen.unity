@@ -430,6 +430,7 @@ GameObject:
   - component: {fileID: 507556288}
   - component: {fileID: 507556287}
   - component: {fileID: 507556286}
+  - component: {fileID: 507556289}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -501,6 +502,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &507556289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507556285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f23adfe17dd89c46b2ef09e2297c87f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &632045601
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,11 +1266,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startAnimationDelay: 0.5
   nextSceneDelay: 0.5
-  gameStartSceneIndex: 0
-  creditsSceneIndex: 1
+  gameStartSceneIndex: 1
+  creditsSceneIndex: 2
   showHideThing: {fileID: 0}
   mainThing: {fileID: 0}
-  sceneJumpAIndex: 2
+  sceneJumpAIndex: 3
   TutorialSlideshow: []
 --- !u!1 &1807563024
 GameObject:
