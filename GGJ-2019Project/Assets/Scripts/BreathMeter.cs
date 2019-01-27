@@ -35,12 +35,12 @@ public class BreathMeter : MonoBehaviour
 
     void Update()
     {
-        var vignetteScaleX = Time.deltaTime;
-        var vignetteScaleY = Time.deltaTime;
+        
 
         if (isDead && SecondsToRespawn > 0f)
         {
             SecondsToRespawn -= Time.deltaTime;
+            ShrinkVision();
         }
         else
         {
@@ -53,6 +53,7 @@ public class BreathMeter : MonoBehaviour
                 else
                 {
                     SecondsOfBreath -= Time.deltaTime;
+                    ShrinkVision();
                 }
             }
             else
@@ -60,7 +61,9 @@ public class BreathMeter : MonoBehaviour
                 if (SecondsOfBreath < maxBreath)
                 {
                     SecondsOfBreath += Time.deltaTime * SecondsOfBreath;
-                }
+                    
+                }   
+                IncreaseVision();
             }
         }
 
@@ -83,7 +86,40 @@ public class BreathMeter : MonoBehaviour
             this.transform.position = RespawnPosition;
             SecondsToRespawn = maxRespawnTimer;
             SecondsOfBreath = maxBreath;
+            FullVision();
         }
+    }
+
+    private void IncreaseVision()
+    {
+        Vector3 scale = vignette.transform.localScale;
+        if (scale.x < 12 && scale.y < 12)
+        {
+            var vignetteScaleX = Time.deltaTime;
+            var vignetteScaleY = Time.deltaTime;
+
+
+            vignette.transform.localScale += new Vector3(vignetteScaleX, vignetteScaleY, 0);
+        }
+
+    }
+
+    private void ShrinkVision()
+    {
+        Vector3 scale = vignette.transform.localScale;
+
+        if (scale.x > 1.5f && scale.y > 1.5f)
+        {
+            var vignetteScaleX = Time.deltaTime;
+            var vignetteScaleY = Time.deltaTime;
+
+            vignette.transform.localScale -= new Vector3(vignetteScaleX, vignetteScaleY, 0);
+        }
+    }
+
+    private void FullVision()
+    {
+        vignette.transform.localScale = new Vector3(12, 12, 0);
     }
 
     private void OnTriggerStay2D(Collider2D other)
