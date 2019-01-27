@@ -87,7 +87,7 @@ public class TopDownMovement : MonoBehaviour
             facing = Facing.East;
         }
 
-        if(breathMeter.isDead)
+        if (breathMeter.isDead)
             velocity.Set(0, 0);
 
         rb2D.velocity = velocity;
@@ -111,7 +111,7 @@ public class TopDownMovement : MonoBehaviour
 
     public void HandleCameraInput()
     {
-        if(Input.GetKey(KeyCode.Z))
+        if (Input.GetKey(KeyCode.Z))
         {
             cameraController.isZooming = true;
         }
@@ -132,14 +132,22 @@ public class TopDownMovement : MonoBehaviour
         }
     }
 
-   
-    void OnTriggerEnter2D(Collider2D other) 
+
+    void OnTriggerEnter2D(Collider2D other)
     {
         //Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...
         if (other.gameObject.CompareTag("PickUp"))
-                {
-                      other.gameObject.SetActive(false);
-                      numOfResources++;
-                }
+        {
+            other.gameObject.SetActive(false);
+            numOfResources++;
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("seed"))
+        {
+
+        }
     }
 }
