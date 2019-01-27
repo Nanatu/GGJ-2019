@@ -33,7 +33,7 @@ public class CameraController : MonoBehaviour
         if (isZooming)
         {
             mainCamera.orthographicSize += zoomSpeed * zoomDirection;
-            if(mainCamera.orthographicSize > maxZoomDistance || mainCamera.orthographicSize < minZoomDistance)
+            if(mainCamera.orthographicSize >= maxZoomDistance || mainCamera.orthographicSize <= minZoomDistance)
             {
                 isZooming = false;
                 zoomDirection = zoomDirection * -1;
