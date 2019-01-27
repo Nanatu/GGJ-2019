@@ -27,12 +27,19 @@ public class TreeGrowth : MonoBehaviour
     public Sprite ancient;
 
     private bool madeSeed = false;
+
+    private ResourceManager resourceManager;
     
     // Start is called before the first frame update
     void Start()
     {
         //find growth ring
         growthRing = this.gameObject.transform.Find("Growth").gameObject;
+        resourceManager = GameObject.Find("ResourceManager").GetComponent<ResourceManager>();
+        
+        resourceManager.SpawnResources(gameObject.transform.position);
+
+
     }
 
     // Update is called once per frame
@@ -114,7 +121,7 @@ public class TreeGrowth : MonoBehaviour
 
     private void SpawnSeed()
     {
-        GameObject seed = GameObject.Find("ResourceManager").GetComponent<ResourceManager>().seed;
+        GameObject seed = resourceManager.seed;
         Instantiate(seed, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity, gameObject.transform);
         
         madeSeed = true;
