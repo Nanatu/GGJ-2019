@@ -161,6 +161,7 @@ public class TopDownMovement : MonoBehaviour
             Instantiate(tree, position, Quaternion.identity);
             Destroy(seed);
             seed = null;
+            breathMeter.SecondsToPlantSeed = breathMeter.maxSeedPlantTimer;
         }
     }
 
