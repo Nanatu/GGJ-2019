@@ -4,29 +4,40 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-
-    private Vector2 velocity;
-
+    private Vector3 velocity;
+    private float minZoomDistance;
+    
+    public int zoomDirection = 1;
     public float smoothTimeX;
     public float smoothTimeY;
+    public float zoomSpeed;
+    public float maxZoomDistance;
+    public bool isZooming;
 
     public GameObject player;
+    public Camera mainCamera;
 
-    // Start is called before the first frame update
     void Start()
     {
-
+        mainCamera = GetComponent<Camera>();
+        minZoomDistance = mainCamera.orthographicSize;
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
+        float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x, ref velocity.x, smoothTimeX);
+        float posY = Mathf.SmoothDamp(transform.position.y, player.transform.position.y, ref velocity.y, smoothTimeY);
 
-        float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x,ref velocity.x, smoothTimeX);
-        float posY = Mathf.SmoothDamp(transform.position.y, player.transform.position.y,ref velocity.y, smoothTimeY);
-    
         transform.position = new Vector3(posX, posY, transform.position.z);
 
+        if (isZooming)
+        {
+            mainCamera.orthographicSize += zoomSpeed * zoomDirection;
+            if(mainCamera.orthographicSize > maxZoomDistance || mainCamera.orthographicSize < minZoomDistance)
+            {
+                isZooming = false;
+                zoomDirection = zoomDirection * -1;
+            }
+        }
     }
 }
-    
