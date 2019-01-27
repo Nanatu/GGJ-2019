@@ -15,7 +15,13 @@ public class BreathMeter : MonoBehaviour
     private float maxRespawnTimer;
     private float maxSeedPlantTimer;
     private bool safeAtHome = true;
-    
+
+    public bool onSafeAtHome
+    {
+        get => safeAtHome;
+        set => safeAtHome = value;
+    }
+
     void Start()
     {
         if (RespawnPosition == null)
@@ -28,7 +34,8 @@ public class BreathMeter : MonoBehaviour
 
     void Update()
     {
-        var vignetteScale = Time.deltaTime * (SecondsOfBreath);
+        var vignetteScaleX = Time.deltaTime;
+        var vignetteScaleY = Time.deltaTime;
 
         if (isDead && SecondsToRespawn > 0f)
         {
@@ -45,7 +52,10 @@ public class BreathMeter : MonoBehaviour
                 else
                 {
                     SecondsOfBreath -= Time.deltaTime;
-                    //vignette.transform.localScale -= new Vector3(vignetteScale,vignetteScale,0);
+                    if(vignette.transform.localScale.x > 1.1)
+                        vignette.transform.localScale -= new Vector3(vignetteScaleX,0,0);
+                    if(vignette.transform.localScale.y > 1.6)
+                        vignette.transform.localScale -= new Vector3(0,vignetteScaleY,0);
                 }
             }
             else
@@ -53,7 +63,10 @@ public class BreathMeter : MonoBehaviour
                 if (SecondsOfBreath < maxBreath)
                 {
                     SecondsOfBreath += Time.deltaTime * SecondsOfBreath;
-                    //vignette.transform.localScale += new Vector3(vignetteScale,vignetteScale,0);
+                    if(vignette.transform.localScale.x > 1.1)
+                        vignette.transform.localScale += new Vector3(vignetteScaleX,0,0);
+                    if(vignette.transform.localScale.y > 1.6)
+                        vignette.transform.localScale += new Vector3(0,vignetteScaleY,0);
                 }   
             }
         }
@@ -81,6 +94,7 @@ public class BreathMeter : MonoBehaviour
         }
     }
 
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Oasis")
@@ -96,4 +110,6 @@ public class BreathMeter : MonoBehaviour
             safeAtHome = false;
         }
     }
+    
+    
 }

@@ -8,6 +8,9 @@ public class ResourceManager : MonoBehaviour
     
     public List<GameObject> resources;
     public GameObject seed;
+    public GameObject tree;
+    
+    
     private List<GameObject> spawnedResources;
 
     public int startingResources = 30;
@@ -62,6 +65,5 @@ public class ResourceManager : MonoBehaviour
         float y = Random.Range(MinY,MaxY);
         
         return new Vector3(x,y,0);
-    }
-   
+    }  
 }
