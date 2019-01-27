@@ -98,7 +98,7 @@ public class BreathMeter : MonoBehaviour
     private void IncreaseVision()
     {
         Vector3 scale = vignette.transform.localScale;
-        if (scale.x < 24 && scale.y < 24)
+        if (scale.x < 40 && scale.y < 40)
         {
 
 
@@ -120,7 +120,7 @@ public class BreathMeter : MonoBehaviour
 
     private void FullVision()
     {
-        vignette.transform.localScale = new Vector3(24, 24, 0);
+        vignette.transform.localScale = new Vector3(40, 40, 0);
     }
 
     private void OnTriggerStay2D(Collider2D other)

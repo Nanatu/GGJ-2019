@@ -180,7 +180,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.00094407797, y: 0.15944275}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -191,7 +191,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.21638322, y: 0.32235008}
   m_EdgeRadius: 0
 --- !u!95 &3752828736963373360
 Animator:
@@ -232,7 +232,7 @@ MonoBehaviour:
   vignette: {fileID: 0}
   maxSeedPlantTimer: 0
   safeAtHome: 1
-  visionSpeed: 0.04
+  visionSpeed: 0.045
 --- !u!114 &1914062025584291184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,6 +247,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   atHome: {fileID: 7231806332065544238}
   awayHome: {fileID: 8898344799198725898}
+  inOasis: 1
+  volumePerUpdate: 0
 --- !u!82 &7231806332065544238
 AudioSource:
   m_ObjectHideFlags: 0
@@ -467,7 +469,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3752828737481251233}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.67215246, y: -0.6393733, z: -9.960778}
+  m_LocalPosition: {x: 0, y: 0, z: -16.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3752828736268287650}
