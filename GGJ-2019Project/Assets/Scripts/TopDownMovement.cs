@@ -94,7 +94,7 @@ public class TopDownMovement : MonoBehaviour
             facing = Facing.East;
         }
 
-        if(breathMeter.isDead)
+        if (breathMeter.isDead)
             velocity.Set(0, 0);
 
         rb2D.velocity = velocity;
@@ -118,7 +118,7 @@ public class TopDownMovement : MonoBehaviour
 
     public void HandleCameraInput()
     {
-        if(Input.GetKey(KeyCode.Z))
+        if (Input.GetKey(KeyCode.Z))
         {
             cameraController.isZooming = true;
         }
@@ -151,7 +151,6 @@ public class TopDownMovement : MonoBehaviour
             spriteRenderer.flipX = false;
         }
     }
-
 
     void OnTriggerEnter2D(Collider2D other)
     {
