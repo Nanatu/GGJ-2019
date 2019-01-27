@@ -166,7 +166,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &3752828736963373366
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -183,7 +183,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 1, y: 1}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
@@ -229,6 +229,7 @@ MonoBehaviour:
   SecondsToRespawn: 3
   isDead: 0
   RespawnPosition: {x: 0, y: 0}
+  vignette: {fileID: 0}
 --- !u!114 &1914062025584291184
 MonoBehaviour:
   m_ObjectHideFlags: 0
