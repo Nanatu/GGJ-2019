@@ -4,37 +4,40 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-
     private Vector3 velocity;
-
+    private float minZoomDistance;
+    
+    public int zoomDirection = 1;
     public float smoothTimeX;
     public float smoothTimeY;
-    public float smoothTimeZ;
-
-    public bool isZoomedOut;
+    public float zoomSpeed;
+    public float maxZoomDistance;
+    public bool isZooming;
 
     public GameObject player;
-    public Vector3 ZoomOutPosition;
+    public Camera mainCamera;
 
     void Start()
     {
-        if (ZoomOutPosition == null)
-            ZoomOutPosition = new Vector3(0, 0, 0);
+        mainCamera = GetComponent<Camera>();
+        minZoomDistance = mainCamera.orthographicSize;
     }
 
     void FixedUpdate()
     {
         float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x, ref velocity.x, smoothTimeX);
         float posY = Mathf.SmoothDamp(transform.position.y, player.transform.position.y, ref velocity.y, smoothTimeY);
-        float posZ = transform.position.z;
 
-        if (isZoomedOut)
+        transform.position = new Vector3(posX, posY, transform.position.z);
+
+        if (isZooming)
         {
-            posX = Mathf.SmoothDamp(transform.position.x, ZoomOutPosition.x, ref velocity.x, smoothTimeX*5);
-            posY = Mathf.SmoothDamp(transform.position.y, ZoomOutPosition.y, ref velocity.y, smoothTimeY*5);
-            posZ = Mathf.SmoothDamp(transform.position.z, ZoomOutPosition.z, ref velocity.z, smoothTimeZ*5);
+            mainCamera.orthographicSize += zoomSpeed * zoomDirection;
+            if(mainCamera.orthographicSize > maxZoomDistance || mainCamera.orthographicSize < minZoomDistance)
+            {
+                isZooming = false;
+                zoomDirection = zoomDirection * -1;
+            }
         }
-
-        transform.position = new Vector3(posX, posY, posZ);
     }
 }

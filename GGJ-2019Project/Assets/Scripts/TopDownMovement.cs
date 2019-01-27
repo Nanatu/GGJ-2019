@@ -39,6 +39,7 @@ public class TopDownMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         breathMeter = GetComponent<BreathMeter>();
+        cameraController = GameObject.FindWithTag("MainCamera").GetComponent<CameraController>();
     }
 
     void Update()
@@ -112,7 +113,7 @@ public class TopDownMovement : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.Z))
         {
-            cameraController.isZoomedOut = !cameraController.isZoomedOut;
+            cameraController.isZooming = true;
         }
     }
 
