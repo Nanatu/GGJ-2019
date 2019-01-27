@@ -3,8 +3,10 @@
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
-		_growthOrigin ("Global Growth Origin", Vector) = (0,0,0,0)
+		[PerRendererData]
+		_growthOrigin ("Local Growth Origin", Vector) = (0,0,0,0)
 		_baseGrowth ("Starting Growth", Float) = 1
+		[PerRendererData]
 		_growthRadius( "Growth Expansion", Float) = 0
 		_detectionThreshold ("Detection Forward Threshold", Float) = .2
 		_growthRamp ("Growth Ramp Scale", Float) = 3
