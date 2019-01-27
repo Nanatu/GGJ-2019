@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Oasis
   - PickUp
+  - Tree
   layers:
   - Default
   - TransparentFX
@@ -49,6 +50,6 @@ TagManager:
   - name: Character
     uniqueID: 3715644467
     locked: 0
-  - name: ui
-    uniqueID: 1105248359
+  - name: UI
+    uniqueID: 3570195413
     locked: 0
