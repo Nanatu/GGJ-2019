@@ -253,6 +253,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 0.21638322
       objectReference: {fileID: 0}
+    - target: {fileID: 7231806332065544238, guid: c96e0965236ef8649b40d90d29caf4c3,
+        type: 3}
+      propertyPath: Mute
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3752828737481251235, guid: c96e0965236ef8649b40d90d29caf4c3,
         type: 3}
       propertyPath: orthographic size

@@ -93,6 +93,8 @@ public class TopDownMovement : MonoBehaviour
             velocity.Set(speed, velocity.y);
             facing = Facing.East;
         }
+        
+        GetComponent<Animator>().SetBool("isSpawning", false);
 
         if (breathMeter.isDead)
             velocity.Set(0, 0);
