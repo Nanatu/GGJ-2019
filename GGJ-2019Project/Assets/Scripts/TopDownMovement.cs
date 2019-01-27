@@ -126,17 +126,34 @@ public class TopDownMovement : MonoBehaviour
 
     public void HandleActionInput()
     {
-        if(Input.GetKey(KeyCode.E))
+        if(Input.GetKeyDown(KeyCode.E))
         {
+            
+            if (IsCarryingSeed)
+            {
+                Vector3 currentPosition = gameObject.transform.localPosition;
+                
+                //check if too close to another tree
+                PlantTree(currentPosition);
+            }
+            
+            
             //pick up seed
-            if (seed)
+            if (seed && !IsCarryingSeed)
             {
                 seed.transform.parent = gameObject.transform;
                 seed.GetComponent<PolygonCollider2D>().enabled = false;
                 
                 seed.transform.localPosition = Vector3.zero;
+                IsCarryingSeed = true;
             }
         }  
+    }
+
+    public void PlantTree(Vector3 position)
+    {
+        GameObject tree = GameObject.Find("ResourceManager").GetComponent<ResourceManager>().tree;
+        Instantiate(tree, position, Quaternion.identity);
     }
 
     public virtual void SetTriggers()

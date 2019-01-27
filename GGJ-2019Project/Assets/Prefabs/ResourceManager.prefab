@@ -51,6 +51,7 @@ MonoBehaviour:
   - {fileID: 6765091351291641250, guid: 939852a8142b3c0499d169f9c8e6b51b, type: 3}
   - {fileID: 1259755014066620360, guid: aea656067c71cc7428482df628bd8a61, type: 3}
   seed: {fileID: 4144171560505321271, guid: 58f749d1e82bd0746a5be135802067e7, type: 3}
+  tree: {fileID: 6334472263719593560, guid: da3b63aaff5603446a13f2dc9860c1df, type: 3}
   startingResources: 30
   MinX: 0
   MaxX: 10
