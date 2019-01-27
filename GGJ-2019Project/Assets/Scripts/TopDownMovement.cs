@@ -16,6 +16,8 @@ public class TopDownMovement : MonoBehaviour
     public Animator animator;
     public SpriteRenderer spriteRenderer;
 
+    public InventoryManager inventory;
+
     private float speed = 1;
     public float NormalSpeed = 1;
     public float CarryingSpeed = 2;
@@ -40,6 +42,8 @@ public class TopDownMovement : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         breathMeter = GetComponent<BreathMeter>();
         cameraController = GameObject.FindWithTag("MainCamera").GetComponent<CameraController>();
+
+        inventory = gameObject.GetComponentInChildren<InventoryManager>();
     }
 
     void Update()
@@ -132,14 +136,33 @@ public class TopDownMovement : MonoBehaviour
         }
     }
 
-   
-    void OnTriggerEnter2D(Collider2D other) 
+
+    void OnTriggerEnter2D(Collider2D other)
     {
         //Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...
         if (other.gameObject.CompareTag("PickUp"))
+        {
+            GameObject otherGameObject = other.gameObject;
+            //other.gameObject.SetActive(false);
+            otherGameObject.GetComponent<BoxCollider2D>().enabled = false;
+            otherGameObject.GetComponent<Orbit>().IsActive = true;
+            otherGameObject.transform.parent = inventory.transform;
+            inventory.inventoriedResources.Add(otherGameObject);
+            numOfResources++;
+        }
+
+        if (other.gameObject.CompareTag("Tree"))
+        {
+            if (inventory.inventoriedResources.Count > 0)
+            {
+                GameObject otherGameObject = other.gameObject;
+                foreach (var resource in inventory.inventoriedResources)
                 {
-                      other.gameObject.SetActive(false);
-                      numOfResources++;
+                    otherGameObject.GetComponent<TreeGrowth>().AddResource();
+                    Destroy(resource);
                 }
+                inventory.inventoriedResources.Clear();
+            }
+        }
     }
 }

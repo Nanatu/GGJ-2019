@@ -28,12 +28,15 @@ public class ResourceManager : MonoBehaviour
     {
         spawnedResources = new List<GameObject>();
         int resourceCount = resources.Count;
+        
+        GameObject carrier = GameObject.FindWithTag("Player").gameObject;
         for (int i = 0; i < startingResources; i++)
         {
             int randomResource = Random.Range(0, resourceCount -1);
             Vector3 randomLocation = GenerateRandomLocation2D();
             GameObject newResource = Instantiate(resources[randomResource], randomLocation, Quaternion.identity);
             newResource.transform.parent = gameObject.transform;
+            newResource.GetComponent<Orbit>().target = carrier.transform;
             spawnedResources.Add(newResource);
         }
     }

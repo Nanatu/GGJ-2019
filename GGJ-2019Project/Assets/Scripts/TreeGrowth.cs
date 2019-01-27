@@ -12,6 +12,7 @@ public class TreeGrowth : MonoBehaviour
     private float curTime = 0f;
 
     private float growth = 0.0f;
+    public float maxGrowth = 1.5f;
     
     public float sproutStage = 0.2f;
     public float seedlingStage = 0.4f;
@@ -68,12 +69,14 @@ public class TreeGrowth : MonoBehaviour
     private void GrowTree()
     {
 
-        growth += growthRate;
-        
-        growthRing.transform.localScale = new Vector3(growth, growth);
+        if (growth < maxGrowth)
+        {
+            growth += growthRate;
 
-        AgeTree();
+            growthRing.transform.localScale = new Vector3(growth, growth);
 
+            AgeTree();
+        }
     }
 
     private void AgeTree()
