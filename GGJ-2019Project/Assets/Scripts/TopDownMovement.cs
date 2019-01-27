@@ -95,11 +95,11 @@ public class TopDownMovement : MonoBehaviour
     {
         if (!rb2D.velocity.y.Equals(0.0f) || !rb2D.velocity.x.Equals(0.0f))
         {
-            animator.SetFloat("speed", 1);
+            animator.SetFloat("Speed", 1);
         }
         else if (rb2D.velocity.y.Equals(0.0f) && rb2D.velocity.x.Equals(0.0f))
         {
-            animator.SetFloat("speed", 0);
+            animator.SetFloat("Speed", 0);
         }
 
         SetTriggers();
@@ -112,11 +112,11 @@ public class TopDownMovement : MonoBehaviour
 
         if (rb2D.velocity.x < 0)
         {
-            spriteRenderer.flipX = false;
+            spriteRenderer.flipX = true;
         }
         else if (rb2D.velocity.x > 0)
         {
-            spriteRenderer.flipX = true;
+            spriteRenderer.flipX = false;
         }
     }
 
