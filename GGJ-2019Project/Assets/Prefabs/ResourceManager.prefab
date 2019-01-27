@@ -44,7 +44,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resources:
-  - {fileID: 3977848913143141462, guid: 937009afc19003444839ac01d301e130, type: 3}
+  - {fileID: 2945425287746285044, guid: 588749bb6da97054583ffadd0a19d664, type: 3}
+  - {fileID: 5473179484579554050, guid: 90fe39a3fab606e4bbd8f6b232ff0eaf, type: 3}
+  - {fileID: 6794585158087255170, guid: f77885908f682044ba9c6fa4f84c9cfc, type: 3}
+  - {fileID: 1000293833712743319, guid: 76220ec623dda534ba5563fb9d09427e, type: 3}
+  - {fileID: 6765091351291641250, guid: 939852a8142b3c0499d169f9c8e6b51b, type: 3}
+  - {fileID: 1259755014066620360, guid: aea656067c71cc7428482df628bd8a61, type: 3}
   seed: {fileID: 4144171560505321271, guid: 58f749d1e82bd0746a5be135802067e7, type: 3}
   startingResources: 30
   MinX: 0

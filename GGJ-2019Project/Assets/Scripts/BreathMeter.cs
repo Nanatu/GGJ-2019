@@ -45,7 +45,7 @@ public class BreathMeter : MonoBehaviour
                 else
                 {
                     SecondsOfBreath -= Time.deltaTime;
-                    vignette.transform.localScale -= new Vector3(vignetteScale,vignetteScale,0);
+                    //vignette.transform.localScale -= new Vector3(vignetteScale,vignetteScale,0);
                 }
             }
             else
@@ -53,7 +53,7 @@ public class BreathMeter : MonoBehaviour
                 if (SecondsOfBreath < maxBreath)
                 {
                     SecondsOfBreath += Time.deltaTime * SecondsOfBreath;
-                    vignette.transform.localScale += new Vector3(vignetteScale,vignetteScale,0);
+                    //vignette.transform.localScale += new Vector3(vignetteScale,vignetteScale,0);
                 }   
             }
         }
