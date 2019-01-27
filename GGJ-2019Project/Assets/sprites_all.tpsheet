@@ -4,7 +4,7 @@
 # To import these sprites into your Unity project, download "TexturePackerImporter":
 # https://www.codeandweb.com/texturepacker/unity
 #
-# $TexturePacker:SmartUpdate:3e07ef157361e4b0f9905da6e750a121:9472c7952d19cbad10c8621a3c5a58f7:f683c4e9aa78f29e0ed6c6b94537e31d$
+# $TexturePacker:SmartUpdate:452825e8992a883de4f336659dccee25:bb998d0c2044a949d26db6bec3e46c06:f683c4e9aa78f29e0ed6c6b94537e31d$
 #
 :format=40300
 :texture=sprites_all.png
@@ -12,82 +12,85 @@
 :pivotpoints=enabled
 :borders=disabled
 
-carrier-die1;1;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die1;34;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die2;67;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die3;100;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die4;100;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die5;133;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die6;133;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die7;133;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die8;133;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die9;166;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die10;166;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die11;199;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die12;199;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die13;166;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die14;166;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die15;199;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die16;199;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die17;166;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die18;166;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die19;199;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_die20;199;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_front;232;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_grab;265;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_hurt1;298;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_hurt2;298;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_hurt3;331;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_hurt4;331;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_hurt5;298;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_hurt6;298;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_hurt7;331;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_hurt8;331;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_hurt9;298;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_hurt10;298;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_hurt11;331;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_hurt12;331;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_hurt13;298;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_hurt14;298;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_hurt15;331;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_hurt16;331;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_hurt17;364;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_idle1;397;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_idle2;430;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_idle3;463;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_idle4;397;991;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_idle5;1;958;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_idle6;34;958;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_idle7;67;958;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_idle8;1;958;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_plant1;100;943;32;47; 0.5;0.5; 0;0;0;0
-carrier-fox_plant2;133;943;32;47; 0.5;0.5; 0;0;0;0
-carrier-fox_plant3;166;943;32;47; 0.5;0.5; 0;0;0;0
-carrier-fox_plant4;199;943;32;47; 0.5;0.5; 0;0;0;0
-carrier-fox_run1;232;958;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_run2;265;958;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_runseed1;298;940;32;50; 0.5;0.5; 0;0;0;0
-carrier-fox_runseed2;331;940;32;50; 0.5;0.5; 0;0;0;0
-carrier-fox_side;364;958;32;32; 0.5;0.5; 0;0;0;0
-carrier-fox_sideseed;397;940;32;50; 0.5;0.5; 0;0;0;0
-carrier-idle1;430;958;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-jern;463;958;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-joel;1;907;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-mamander;34;907;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-met;67;907;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-ratch;100;907;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-woostern;133;907;32;32; 0.5;0.5; 0;0;0;0
-credits-little faces-zern;166;907;32;32; 0.5;0.5; 0;0;0;0
-resource1-neutral;199;919;20;20; 0.5;0.5; 0;0;0;0
-resource1-resource_green1;220;932;7;7; 0.5;0.5; 0;0;0;0
-resource1-resource_green2;228;931;13;8; 0.5;0.5; 0;0;0;0
-resource1-resource_green3;242;932;7;7; 0.5;0.5; 0;0;0;0
-resource1-resource_ore1;250;929;11;10; 0.5;0.5; 0;0;0;0
-resource1-resource_ore2;262;930;11;9; 0.5;0.5; 0;0;0;0
-resource1-resource_ore3;274;930;5;9; 0.5;0.5; 0;0;0;0
-tree-adultTree;280;739;200;200; 0.53;0.07000000000000006; 0;0;0;0
-tree-ancientTree;1;538;200;200; 0.53;0.07000000000000006; 0;0;0;0
-tree-seed;202;708;25;30; 0.5;0.5; 0;0;0;0
-tree-seedling;228;538;200;200; 0.53;0.07000000000000006; 0;0;0;0
-tree-sprout;1;337;200;200; 0.53;0.07000000000000006; 0;0;0;0
-tree-tweenTree;202;337;200;200; 0.53;0.07000000000000006; 0;0;0;0
+carrier-fox_die1;1;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_die2;34;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_die3;67;991;32;32; 0.5;0.0625; 0;0;0;0
+carrier-fox_die4;67;991;32;32; 0.5;0.0625; 0;0;0;0
+carrier-fox_die5;100;991;32;32; 0.5;0.0625; 0;0;0;0
+carrier-fox_die6;100;991;32;32; 0.5;0.0625; 0;0;0;0
+carrier-fox_die7;100;991;32;32; 0.5;0.0625; 0;0;0;0
+carrier-fox_die8;100;991;32;32; 0.5;0.0625; 0;0;0;0
+carrier-fox_die9;133;991;32;32; 0.5;0.0625; 0;0;0;0
+carrier-fox_die10;133;991;32;32; 0.5;0.0625; 0;0;0;0
+carrier-fox_die11;166;991;32;32; 0.5;0.0625; 0;0;0;0
+carrier-fox_die12;166;991;32;32; 0.5;0.0625; 0;0;0;0
+carrier-fox_die13;133;991;32;32; 0.5;0.0625; 0;0;0;0
+carrier-fox_die14;133;991;32;32; 0.5;0.0625; 0;0;0;0
+carrier-fox_die15;166;991;32;32; 0.5;0.0625; 0;0;0;0
+carrier-fox_die16;166;991;32;32; 0.5;0.0625; 0;0;0;0
+carrier-fox_die17;133;991;32;32; 0.5;0.0625; 0;0;0;0
+carrier-fox_die18;133;991;32;32; 0.5;0.0625; 0;0;0;0
+carrier-fox_die19;166;991;32;32; 0.5;0.0625; 0;0;0;0
+carrier-fox_die20;166;991;32;32; 0.5;0.0625; 0;0;0;0
+carrier-fox_front;199;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_grab;232;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_hurt1;265;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_hurt2;265;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_hurt3;298;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_hurt4;298;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_hurt5;265;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_hurt6;265;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_hurt7;298;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_hurt8;298;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_hurt9;265;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_hurt10;265;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_hurt11;298;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_hurt12;298;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_hurt13;265;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_hurt14;265;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_hurt15;298;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_hurt16;298;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_hurt17;331;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_idle1;364;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_idle2;397;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_idle3;430;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_idle4;364;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_idle5;463;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_idle6;1;958;32;32; 0.5;0; 0;0;0;0
+carrier-fox_idle7;34;958;32;32; 0.5;0; 0;0;0;0
+carrier-fox_idle8;463;991;32;32; 0.5;0; 0;0;0;0
+carrier-fox_plant1;67;958;32;32; 0.5;0; 0;0;0;0
+carrier-fox_plant2;100;958;32;32; 0.5;0; 0;0;0;0
+carrier-fox_plant3;133;958;32;32; 0.5;0; 0;0;0;0
+carrier-fox_plant4;166;958;32;32; 0.5;0; 0;0;0;0
+carrier-fox_run1;199;958;32;32; 0.5;0; 0;0;0;0
+carrier-fox_run2;232;958;32;32; 0.5;0; 0;0;0;0
+carrier-fox_runseed1;265;958;32;32; 0.5;0; 0;0;0;0
+carrier-fox_runseed2;298;958;32;32; 0.5;0; 0;0;0;0
+carrier-fox_side;331;958;32;32; 0.5;0; 0;0;0;0
+carrier-fox_sideseed;364;958;32;32; 0.5;0; 0;0;0;0
+carrier-spawn1;397;958;32;32; 0.5;0; 0;0;0;0
+carrier-spawn2;430;958;32;32; 0.5;0; 0;0;0;0
+carrier-spawn3;463;958;32;32; 0.5;0; 0;0;0;0
+carrier-spawn4;1;925;32;32; 0.5;0; 0;0;0;0
+carrier-spawn5;34;925;32;32; 0.5;0; 0;0;0;0
+credits-little faces-jern;67;925;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-joel;100;925;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-mamander;133;925;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-met;166;925;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-ratch;199;925;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-woostern;232;925;32;32; 0.5;0.5; 0;0;0;0
+credits-little faces-zern;265;925;32;32; 0.5;0.5; 0;0;0;0
+resource1-neutral;298;937;20;20; 0.5;0.5; 0;0;0;0
+resource1-resource_green1;319;950;7;7; 0.5;0.5; 0;0;0;0
+resource1-resource_green2;327;949;13;8; 0.5;0.5; 0;0;0;0
+resource1-resource_green3;341;950;7;7; 0.5;0.5; 0;0;0;0
+resource1-resource_ore1;349;947;11;10; 0.5;0.5; 0;0;0;0
+resource1-resource_ore2;361;948;11;9; 0.5;0.5; 0;0;0;0
+resource1-resource_ore3;373;948;5;9; 0.5;0.5; 0;0;0;0
+tree-adultTree;1;724;200;200; 0.53;0.06999999999999995; 0;0;0;0
+tree-ancientTree;202;724;200;200; 0.53;0.06999999999999995; 0;0;0;0
+tree-seed;403;860;32;64; 0.5;0.5; 0;0;0;0
+tree-seedling;1;523;200;200; 0.53;0.06999999999999995; 0;0;0;0
+tree-sprout;202;523;200;200; 0.53;0.06999999999999995; 0;0;0;0
+tree-tweenTree;1;322;200;200; 0.53;0.06999999999999995; 0;0;0;0

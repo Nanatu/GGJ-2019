@@ -9,6 +9,7 @@ public class TopDownMovement : MonoBehaviour
 
     public static TopDownMovement instance;
     public BreathMeter breathMeter;
+    public CameraController cameraController;
     public Facing facing;
     public Rigidbody2D rb2D;
     public BoxCollider2D bc2D;
@@ -19,6 +20,7 @@ public class TopDownMovement : MonoBehaviour
     public float NormalSpeed = 1;
     public float CarryingSpeed = 2;
     public bool IsCarryingSeed = false;
+    public float CameraZoomSpeed = 2;
     public bool busyHandlingInput = false;
     public int numOfResources = 0;
 
@@ -37,6 +39,7 @@ public class TopDownMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         breathMeter = GetComponent<BreathMeter>();
+        cameraController = GameObject.FindWithTag("MainCamera").GetComponent<CameraController>();
     }
 
     void Update()
@@ -55,6 +58,7 @@ public class TopDownMovement : MonoBehaviour
     public void HandleInput()
     {
         HandleMovementInput();
+        HandleCameraInput();
     }
 
     public void HandleMovementInput()
@@ -103,6 +107,14 @@ public class TopDownMovement : MonoBehaviour
         }
 
         SetTriggers();
+    }
+
+    public void HandleCameraInput()
+    {
+        if(Input.GetKey(KeyCode.Z))
+        {
+            cameraController.isZooming = true;
+        }
     }
 
     public virtual void SetTriggers()

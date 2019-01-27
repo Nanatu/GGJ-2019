@@ -82,6 +82,11 @@ TextureImporter:
     21300154: resource1-resource_ore1
     21300156: resource1-resource_ore2
     21300158: resource1-resource_ore3
+    21300160: carrier-spawn1
+    21300162: carrier-spawn2
+    21300164: carrier-spawn3
+    21300166: carrier-spawn4
+    21300168: carrier-spawn5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -164,41 +169,21 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: carrier-die1
+      name: carrier-fox_die1
       rect:
         serializedVersion: 2
         x: 1
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cafb1976e135cab4ca24e8b87c4e7cd2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrier-fox_die1
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 991
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6fd316c56bfb43b4183d446eeeed30f8
+      spriteID: 3e05040031cdc2a429066f90e011b7c2
       vertices: []
       indices: 
       edges: []
@@ -207,18 +192,18 @@ TextureImporter:
       name: carrier-fox_die2
       rect:
         serializedVersion: 2
-        x: 67
+        x: 34
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 826673933144a4545aaed04029587342
+      spriteID: d19a074104cb81c4ca99e590894b4780
       vertices: []
       indices: 
       edges: []
@@ -227,18 +212,18 @@ TextureImporter:
       name: carrier-fox_die3
       rect:
         serializedVersion: 2
-        x: 100
+        x: 67
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55c74d14cf8a8304b9162eee99332b9a
+      spriteID: 3d7cdf992d7951a4da9c91d0a6768ab3
       vertices: []
       indices: 
       edges: []
@@ -247,18 +232,18 @@ TextureImporter:
       name: carrier-fox_die4
       rect:
         serializedVersion: 2
-        x: 100
+        x: 67
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ecd1938f2de7064f921844f3d35e494
+      spriteID: 6e893b1a6fd24b742b2c6ae1ecc4d2f5
       vertices: []
       indices: 
       edges: []
@@ -267,18 +252,18 @@ TextureImporter:
       name: carrier-fox_die5
       rect:
         serializedVersion: 2
-        x: 133
+        x: 100
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8884d5f67debec842a11a815873548c6
+      spriteID: 4b6696335f4a6de4cb2247d5e3d6fba1
       vertices: []
       indices: 
       edges: []
@@ -287,18 +272,18 @@ TextureImporter:
       name: carrier-fox_die6
       rect:
         serializedVersion: 2
-        x: 133
+        x: 100
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 96cd878fef0cdc042bf9950b9b454785
+      spriteID: bb05257229ba65c4a96a2ae590f25519
       vertices: []
       indices: 
       edges: []
@@ -307,18 +292,18 @@ TextureImporter:
       name: carrier-fox_die7
       rect:
         serializedVersion: 2
-        x: 133
+        x: 100
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dcb05c79b0e07d943ae749b94b52f1df
+      spriteID: 1d7848f6126910d4bba01504dc6414a7
       vertices: []
       indices: 
       edges: []
@@ -327,18 +312,18 @@ TextureImporter:
       name: carrier-fox_die8
       rect:
         serializedVersion: 2
-        x: 133
+        x: 100
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e290e7e571874f46a0ec82d7576d65f
+      spriteID: 9072bf51628fdf049bc426c521863336
       vertices: []
       indices: 
       edges: []
@@ -347,18 +332,18 @@ TextureImporter:
       name: carrier-fox_die9
       rect:
         serializedVersion: 2
-        x: 166
+        x: 133
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 88634af7ea9f2fa488cb5dac772cf9b5
+      spriteID: e401b56a07590a045830e14177610265
       vertices: []
       indices: 
       edges: []
@@ -367,18 +352,18 @@ TextureImporter:
       name: carrier-fox_die10
       rect:
         serializedVersion: 2
-        x: 166
+        x: 133
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ba2c464fbca1874eb3fd02649f60edd
+      spriteID: 3cda3296e969ecc429579b544290f8a1
       vertices: []
       indices: 
       edges: []
@@ -387,18 +372,18 @@ TextureImporter:
       name: carrier-fox_die11
       rect:
         serializedVersion: 2
-        x: 199
+        x: 166
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac69b518182695c47ac21ce772b3e69d
+      spriteID: d15e5f3014ff9364da6402408f3ab97b
       vertices: []
       indices: 
       edges: []
@@ -407,18 +392,18 @@ TextureImporter:
       name: carrier-fox_die12
       rect:
         serializedVersion: 2
-        x: 199
+        x: 166
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ecad362e3e62e654d99db66f4a400156
+      spriteID: 76cda2a30f94df24e833082552dc8c6e
       vertices: []
       indices: 
       edges: []
@@ -427,18 +412,18 @@ TextureImporter:
       name: carrier-fox_die13
       rect:
         serializedVersion: 2
-        x: 166
+        x: 133
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0aa3fd9e0f3cdb04da8cdad5cead510c
+      spriteID: d00c334c73e441c4fbf147e840f75527
       vertices: []
       indices: 
       edges: []
@@ -447,18 +432,18 @@ TextureImporter:
       name: carrier-fox_die14
       rect:
         serializedVersion: 2
-        x: 166
+        x: 133
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 10f3b0e54061195409d7e56183c2f5ac
+      spriteID: 6073704bcb90b9b45ad5bf7762942616
       vertices: []
       indices: 
       edges: []
@@ -467,18 +452,18 @@ TextureImporter:
       name: carrier-fox_die15
       rect:
         serializedVersion: 2
-        x: 199
+        x: 166
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cee0230cfe536484494d0a92e5931ea0
+      spriteID: b470c44984de4db47a3a76e10f4d747b
       vertices: []
       indices: 
       edges: []
@@ -487,18 +472,18 @@ TextureImporter:
       name: carrier-fox_die16
       rect:
         serializedVersion: 2
-        x: 199
+        x: 166
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5a788675386a774a93758622f9b1068
+      spriteID: a8425a47db915a04591f928f88302169
       vertices: []
       indices: 
       edges: []
@@ -507,18 +492,18 @@ TextureImporter:
       name: carrier-fox_die17
       rect:
         serializedVersion: 2
-        x: 166
+        x: 133
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 86ae6befe6bff114eaa53b675de3ec95
+      spriteID: 0003de557ab64c84c8b370b6fc417abe
       vertices: []
       indices: 
       edges: []
@@ -527,18 +512,18 @@ TextureImporter:
       name: carrier-fox_die18
       rect:
         serializedVersion: 2
-        x: 166
+        x: 133
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19e7ab4985604374dbdd7b90fde942e2
+      spriteID: 34026ef3f9a2c4d46b30eda843dcf55e
       vertices: []
       indices: 
       edges: []
@@ -547,18 +532,18 @@ TextureImporter:
       name: carrier-fox_die19
       rect:
         serializedVersion: 2
-        x: 199
+        x: 166
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d87ed914bfa2fa24faa7df98691289db
+      spriteID: 57bd35617d6a49a42ab5567b0be60d95
       vertices: []
       indices: 
       edges: []
@@ -567,18 +552,18 @@ TextureImporter:
       name: carrier-fox_die20
       rect:
         serializedVersion: 2
-        x: 199
+        x: 166
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b4b62418a240b54ea157872e16896b4
+      spriteID: c73885a16bf726f48872554187aab2b7
       vertices: []
       indices: 
       edges: []
@@ -587,18 +572,18 @@ TextureImporter:
       name: carrier-fox_front
       rect:
         serializedVersion: 2
-        x: 232
+        x: 199
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d95f4ea4a2ab5142bf84cc34c2ec731
+      spriteID: 61b0e43029a1bf348bef60b89ffac43a
       vertices: []
       indices: 
       edges: []
@@ -607,18 +592,18 @@ TextureImporter:
       name: carrier-fox_grab
       rect:
         serializedVersion: 2
-        x: 265
+        x: 232
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c9b9f91265a4c742a2ca77f002cea30
+      spriteID: ae1d89369d94e094c872843a19631725
       vertices: []
       indices: 
       edges: []
@@ -627,18 +612,18 @@ TextureImporter:
       name: carrier-fox_hurt1
       rect:
         serializedVersion: 2
-        x: 298
+        x: 265
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c1ce44806a594e04e83e312cdb0f0410
+      spriteID: f2ccc054cedafad44b0543486416466b
       vertices: []
       indices: 
       edges: []
@@ -647,18 +632,18 @@ TextureImporter:
       name: carrier-fox_hurt2
       rect:
         serializedVersion: 2
-        x: 298
+        x: 265
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef44f0c6ade4ab04cb1cf9817eeaf4fc
+      spriteID: 2b243f916a97ec54d97ad8acbf9726ef
       vertices: []
       indices: 
       edges: []
@@ -667,18 +652,18 @@ TextureImporter:
       name: carrier-fox_hurt3
       rect:
         serializedVersion: 2
-        x: 331
+        x: 298
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d9da79a8547a1e4baa58abde753555e
+      spriteID: 9f9fb4773d8dfbc4a8959e54885526d7
       vertices: []
       indices: 
       edges: []
@@ -687,18 +672,18 @@ TextureImporter:
       name: carrier-fox_hurt4
       rect:
         serializedVersion: 2
-        x: 331
+        x: 298
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24dcbd7ff39c8de4594a0400c597cc76
+      spriteID: b6b5fc4c8897c46419f0667de117e1ea
       vertices: []
       indices: 
       edges: []
@@ -707,18 +692,18 @@ TextureImporter:
       name: carrier-fox_hurt5
       rect:
         serializedVersion: 2
-        x: 298
+        x: 265
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 97c60eabc7913ce43b5667e365896cb0
+      spriteID: 7a8a8a2191132184885db4576a595da2
       vertices: []
       indices: 
       edges: []
@@ -727,18 +712,18 @@ TextureImporter:
       name: carrier-fox_hurt6
       rect:
         serializedVersion: 2
-        x: 298
+        x: 265
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 60d55c5f30f06db4aa2d754447d49fd6
+      spriteID: 09f04dbc301e7d240a52a1b28c5d0ebf
       vertices: []
       indices: 
       edges: []
@@ -747,18 +732,18 @@ TextureImporter:
       name: carrier-fox_hurt7
       rect:
         serializedVersion: 2
-        x: 331
+        x: 298
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a56c1b3669e2efd439dda4013de7dffc
+      spriteID: 05d5f03f39071354aa6a81e4739657b8
       vertices: []
       indices: 
       edges: []
@@ -767,18 +752,18 @@ TextureImporter:
       name: carrier-fox_hurt8
       rect:
         serializedVersion: 2
-        x: 331
+        x: 298
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24a090d530694594bbe45a3bb8450341
+      spriteID: acb4588faa845bc419eaa37459723658
       vertices: []
       indices: 
       edges: []
@@ -787,18 +772,18 @@ TextureImporter:
       name: carrier-fox_hurt9
       rect:
         serializedVersion: 2
-        x: 298
+        x: 265
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 57c3f97dcf5fcfe41a98f1093cf487a7
+      spriteID: cf177c533133341448d439f909470b18
       vertices: []
       indices: 
       edges: []
@@ -807,18 +792,18 @@ TextureImporter:
       name: carrier-fox_hurt10
       rect:
         serializedVersion: 2
-        x: 298
+        x: 265
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d627dd443a31f5f4ba6ead0a4ef5f1ea
+      spriteID: 848c4f369028363469be00c36d43efdc
       vertices: []
       indices: 
       edges: []
@@ -827,18 +812,18 @@ TextureImporter:
       name: carrier-fox_hurt11
       rect:
         serializedVersion: 2
-        x: 331
+        x: 298
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 033b62975ffc97f46b202baa35ddff9f
+      spriteID: 38a34a46c22a6b241bca681c0c91ed08
       vertices: []
       indices: 
       edges: []
@@ -847,18 +832,18 @@ TextureImporter:
       name: carrier-fox_hurt12
       rect:
         serializedVersion: 2
-        x: 331
+        x: 298
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dbfe6d351bbf5c2448c3f6c0d92c6122
+      spriteID: 8396f83215398744e85e3967a54d191b
       vertices: []
       indices: 
       edges: []
@@ -867,18 +852,18 @@ TextureImporter:
       name: carrier-fox_hurt13
       rect:
         serializedVersion: 2
-        x: 298
+        x: 265
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 23395c3f524ec7b4b98dde9e4a83adc3
+      spriteID: e1d231927df34c247b5f744339a3c578
       vertices: []
       indices: 
       edges: []
@@ -887,18 +872,18 @@ TextureImporter:
       name: carrier-fox_hurt14
       rect:
         serializedVersion: 2
-        x: 298
+        x: 265
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27a90cfcd67573448bb4cbb1936be695
+      spriteID: b98839a31c9b7b34c9e7b8ca978a39e9
       vertices: []
       indices: 
       edges: []
@@ -907,18 +892,18 @@ TextureImporter:
       name: carrier-fox_hurt15
       rect:
         serializedVersion: 2
-        x: 331
+        x: 298
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4f35d8c4ec313614d8c290a04377cc7a
+      spriteID: 7776ef2c5eb71c54fab34bdc842f6813
       vertices: []
       indices: 
       edges: []
@@ -927,18 +912,18 @@ TextureImporter:
       name: carrier-fox_hurt16
       rect:
         serializedVersion: 2
-        x: 331
+        x: 298
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7e9c0e46b18ab446bc6aa9b220a148f
+      spriteID: 6e6ea65ddc786504f987fa0e2d5b6e38
       vertices: []
       indices: 
       edges: []
@@ -947,18 +932,18 @@ TextureImporter:
       name: carrier-fox_hurt17
       rect:
         serializedVersion: 2
-        x: 364
+        x: 331
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a1adbdd3e28b74d438cf2e940d7a2295
+      spriteID: 4f73a429a5d2fa54ab3ca7992af9331b
       vertices: []
       indices: 
       edges: []
@@ -967,18 +952,18 @@ TextureImporter:
       name: carrier-fox_idle1
       rect:
         serializedVersion: 2
-        x: 397
+        x: 364
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e3fe8e320e097794bbfbd81a4c573a02
+      spriteID: 12c712ccbfd76344aa225dca8910b3e3
       vertices: []
       indices: 
       edges: []
@@ -987,18 +972,18 @@ TextureImporter:
       name: carrier-fox_idle2
       rect:
         serializedVersion: 2
-        x: 430
+        x: 397
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba127ca3138f3924599d085988c0caa7
+      spriteID: 64898a13856f51640afba49a43dd646a
       vertices: []
       indices: 
       edges: []
@@ -1007,18 +992,18 @@ TextureImporter:
       name: carrier-fox_idle3
       rect:
         serializedVersion: 2
-        x: 463
+        x: 430
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cbaad2b8d7d25004592f8e212ce47ee7
+      spriteID: 43b83db17dbff5b4e9e5a74dfd426ec3
       vertices: []
       indices: 
       edges: []
@@ -1027,18 +1012,18 @@ TextureImporter:
       name: carrier-fox_idle4
       rect:
         serializedVersion: 2
-        x: 397
+        x: 364
         y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6ad9acd46c596847841cdf583e29e26
+      spriteID: 84f983178dde1584fb4a14f1cc884ae0
       vertices: []
       indices: 
       edges: []
@@ -1047,18 +1032,18 @@ TextureImporter:
       name: carrier-fox_idle5
       rect:
         serializedVersion: 2
-        x: 1
-        y: 958
+        x: 463
+        y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7f4a1677f03dd7848a1cbc64b9b2a7f2
+      spriteID: c8f65bc0d641f0e4287253de73f0b1d9
       vertices: []
       indices: 
       edges: []
@@ -1067,18 +1052,18 @@ TextureImporter:
       name: carrier-fox_idle6
       rect:
         serializedVersion: 2
-        x: 34
+        x: 1
         y: 958
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e72a9b24ee906914aa122ac070559582
+      spriteID: ec84931707ba00641b44dc92cee1fb68
       vertices: []
       indices: 
       edges: []
@@ -1087,18 +1072,18 @@ TextureImporter:
       name: carrier-fox_idle7
       rect:
         serializedVersion: 2
-        x: 67
+        x: 34
         y: 958
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 12ffdda94d68c014cbf5e903907ce41d
+      spriteID: 2a3f98db953bf5941b1afbe91d894770
       vertices: []
       indices: 
       edges: []
@@ -1107,18 +1092,18 @@ TextureImporter:
       name: carrier-fox_idle8
       rect:
         serializedVersion: 2
-        x: 1
-        y: 958
+        x: 463
+        y: 991
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61c4c4c12c45b2b4fab0808d55931430
+      spriteID: 36416649562cabf48967f70332542e85
       vertices: []
       indices: 
       edges: []
@@ -1127,18 +1112,18 @@ TextureImporter:
       name: carrier-fox_plant1
       rect:
         serializedVersion: 2
-        x: 100
-        y: 943
+        x: 67
+        y: 958
         width: 32
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d0fefea9a581c5b4fabc770d3e406c6d
+      spriteID: 9cab896b3edaaff4aade5e3d4fae9b26
       vertices: []
       indices: 
       edges: []
@@ -1147,18 +1132,18 @@ TextureImporter:
       name: carrier-fox_plant2
       rect:
         serializedVersion: 2
-        x: 133
-        y: 943
+        x: 100
+        y: 958
         width: 32
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 37da94ca6e2784449b1c1a23ebe98b77
+      spriteID: 29fae3983762887489889f89803c34c3
       vertices: []
       indices: 
       edges: []
@@ -1167,18 +1152,18 @@ TextureImporter:
       name: carrier-fox_plant3
       rect:
         serializedVersion: 2
-        x: 166
-        y: 943
+        x: 133
+        y: 958
         width: 32
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a90528b5f788e2a478f94c19e68b5985
+      spriteID: a7741f79b851ca5428f4ba55380359ea
       vertices: []
       indices: 
       edges: []
@@ -1187,18 +1172,18 @@ TextureImporter:
       name: carrier-fox_plant4
       rect:
         serializedVersion: 2
-        x: 199
-        y: 943
+        x: 166
+        y: 958
         width: 32
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f08e5b68a5aeb3e45b3b22e913b59f60
+      spriteID: a86d7a2eae30a314eb1fdd2f1243216b
       vertices: []
       indices: 
       edges: []
@@ -1207,18 +1192,18 @@ TextureImporter:
       name: carrier-fox_run1
       rect:
         serializedVersion: 2
-        x: 232
+        x: 199
         y: 958
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 283c102b0c396d04ab7140e668f8f4f0
+      spriteID: 38c7faa8dccbc8a40bf80efb1f01b194
       vertices: []
       indices: 
       edges: []
@@ -1227,18 +1212,18 @@ TextureImporter:
       name: carrier-fox_run2
       rect:
         serializedVersion: 2
-        x: 265
+        x: 232
         y: 958
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 474c62ce0ca693e4a8026315449295a0
+      spriteID: 239fbb8ed07ca9942bf5420435e46bed
       vertices: []
       indices: 
       edges: []
@@ -1247,18 +1232,18 @@ TextureImporter:
       name: carrier-fox_runseed1
       rect:
         serializedVersion: 2
-        x: 298
-        y: 940
+        x: 265
+        y: 958
         width: 32
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c21278904f302445a829c49f16e8a83
+      spriteID: 98b13013f8a01e942804b3672a5fe81c
       vertices: []
       indices: 
       edges: []
@@ -1267,18 +1252,18 @@ TextureImporter:
       name: carrier-fox_runseed2
       rect:
         serializedVersion: 2
-        x: 331
-        y: 940
+        x: 298
+        y: 958
         width: 32
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb18264b9b0bb594383906fedf42e565
+      spriteID: a14f438eb8b7daa4d97dc4575f61d1d9
       vertices: []
       indices: 
       edges: []
@@ -1287,18 +1272,18 @@ TextureImporter:
       name: carrier-fox_side
       rect:
         serializedVersion: 2
-        x: 364
+        x: 331
         y: 958
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ec0fc15d56452e4196e9b8746f462dd
+      spriteID: 8df6e8f4a5ba6da4c82b13accf8fd7aa
       vertices: []
       indices: 
       edges: []
@@ -1307,38 +1292,118 @@ TextureImporter:
       name: carrier-fox_sideseed
       rect:
         serializedVersion: 2
-        x: 397
-        y: 940
+        x: 364
+        y: 958
         width: 32
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c333d34b6edf3e4895ab9c9dc59f580
+      spriteID: 426d91b73a5d998458594149005e2384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrier-idle1
+      name: carrier-spawn1
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 958
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fadbb84e082d19f4b94499c231f1579e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrier-spawn2
       rect:
         serializedVersion: 2
         x: 430
         y: 958
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b524655898f7e4419d05bbad869965a
+      spriteID: bde3c47134ceda84da58c5262e4be278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrier-spawn3
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 958
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f59be5478cbba864fbe7c8ae5fa07f07
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrier-spawn4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 925
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 712604e64684707428085778b76c4dac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrier-spawn5
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 925
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bad41f0d18841147af3f1b4f3877a7a
       vertices: []
       indices: 
       edges: []
@@ -1347,8 +1412,8 @@ TextureImporter:
       name: credits-little faces-jern
       rect:
         serializedVersion: 2
-        x: 463
-        y: 958
+        x: 67
+        y: 925
         width: 32
         height: 32
       alignment: 0
@@ -1358,7 +1423,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6df87f7b0a8291d4ab3a4a556c63d2c0
+      spriteID: 03e7d717609f3c1479153526baf3ac6f
       vertices: []
       indices: 
       edges: []
@@ -1367,8 +1432,8 @@ TextureImporter:
       name: credits-little faces-joel
       rect:
         serializedVersion: 2
-        x: 1
-        y: 907
+        x: 100
+        y: 925
         width: 32
         height: 32
       alignment: 0
@@ -1378,7 +1443,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0710c8af462ba6a4abe97cd28e3fb520
+      spriteID: d02546c1affef94409c405e6e09d700e
       vertices: []
       indices: 
       edges: []
@@ -1387,8 +1452,8 @@ TextureImporter:
       name: credits-little faces-mamander
       rect:
         serializedVersion: 2
-        x: 34
-        y: 907
+        x: 133
+        y: 925
         width: 32
         height: 32
       alignment: 0
@@ -1398,7 +1463,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f5bc03db176e1746b40093e828c1106
+      spriteID: dc79502e4f44bb348b0f3a6123745d24
       vertices: []
       indices: 
       edges: []
@@ -1407,8 +1472,8 @@ TextureImporter:
       name: credits-little faces-met
       rect:
         serializedVersion: 2
-        x: 67
-        y: 907
+        x: 166
+        y: 925
         width: 32
         height: 32
       alignment: 0
@@ -1418,7 +1483,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 593002f02f4a46f41b5e12c412b39531
+      spriteID: 8032b94aa17a65042b50972876a1e51b
       vertices: []
       indices: 
       edges: []
@@ -1427,8 +1492,8 @@ TextureImporter:
       name: credits-little faces-ratch
       rect:
         serializedVersion: 2
-        x: 100
-        y: 907
+        x: 199
+        y: 925
         width: 32
         height: 32
       alignment: 0
@@ -1438,7 +1503,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac05868de8531a942affb69a58033c45
+      spriteID: 6b0f3f25f528fe648bf3832fe20217af
       vertices: []
       indices: 
       edges: []
@@ -1447,8 +1512,8 @@ TextureImporter:
       name: credits-little faces-woostern
       rect:
         serializedVersion: 2
-        x: 133
-        y: 907
+        x: 232
+        y: 925
         width: 32
         height: 32
       alignment: 0
@@ -1458,7 +1523,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e10e417593dd8504fb3a16290e0816ac
+      spriteID: 580b30e85871f0f4b8017c1153db7219
       vertices: []
       indices: 
       edges: []
@@ -1467,8 +1532,8 @@ TextureImporter:
       name: credits-little faces-zern
       rect:
         serializedVersion: 2
-        x: 166
-        y: 907
+        x: 265
+        y: 925
         width: 32
         height: 32
       alignment: 0
@@ -1478,7 +1543,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01f0b08e09e63ad4ea1b58698e35c9e4
+      spriteID: 1539fe3263fc7ee4d9e3da6e23e2c36d
       vertices: []
       indices: 
       edges: []
@@ -1487,8 +1552,8 @@ TextureImporter:
       name: resource1-neutral
       rect:
         serializedVersion: 2
-        x: 199
-        y: 919
+        x: 298
+        y: 937
         width: 20
         height: 20
       alignment: 0
@@ -1498,7 +1563,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c7a01bb724d62547ac3ddf1c525c291
+      spriteID: 09665dbec8b203a4183df08bd74b2ff0
       vertices: []
       indices: 
       edges: []
@@ -1507,8 +1572,8 @@ TextureImporter:
       name: resource1-resource_green1
       rect:
         serializedVersion: 2
-        x: 220
-        y: 932
+        x: 319
+        y: 950
         width: 7
         height: 7
       alignment: 0
@@ -1518,7 +1583,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b1558d88733e6ce4aa18db8e02c975ce
+      spriteID: c58dd0cb8a13b164498f56e8c83dab89
       vertices: []
       indices: 
       edges: []
@@ -1527,8 +1592,8 @@ TextureImporter:
       name: resource1-resource_green2
       rect:
         serializedVersion: 2
-        x: 228
-        y: 931
+        x: 327
+        y: 949
         width: 13
         height: 8
       alignment: 0
@@ -1538,7 +1603,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a5e2b53f8569cc4abb5fbd5331a1122
+      spriteID: 065cb9f5b58833044ae79498b2f19366
       vertices: []
       indices: 
       edges: []
@@ -1547,8 +1612,8 @@ TextureImporter:
       name: resource1-resource_green3
       rect:
         serializedVersion: 2
-        x: 242
-        y: 932
+        x: 341
+        y: 950
         width: 7
         height: 7
       alignment: 0
@@ -1558,7 +1623,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c944ad4a1c41c544ac466a88101fb09
+      spriteID: 95ab6f162d09c924cb6bc233dd370f28
       vertices: []
       indices: 
       edges: []
@@ -1567,8 +1632,8 @@ TextureImporter:
       name: resource1-resource_ore1
       rect:
         serializedVersion: 2
-        x: 250
-        y: 929
+        x: 349
+        y: 947
         width: 11
         height: 10
       alignment: 0
@@ -1578,7 +1643,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 68ebaede1b8d0a94ab2560f68d8a73e8
+      spriteID: e6940c2d2acbe6447ad9b354c51446fa
       vertices: []
       indices: 
       edges: []
@@ -1587,8 +1652,8 @@ TextureImporter:
       name: resource1-resource_ore2
       rect:
         serializedVersion: 2
-        x: 262
-        y: 930
+        x: 361
+        y: 948
         width: 11
         height: 9
       alignment: 0
@@ -1598,7 +1663,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1cfe690ccc84f6440b95afa39e432a95
+      spriteID: f6bf5516cc83f114b88325863873e2fd
       vertices: []
       indices: 
       edges: []
@@ -1607,8 +1672,8 @@ TextureImporter:
       name: resource1-resource_ore3
       rect:
         serializedVersion: 2
-        x: 274
-        y: 930
+        x: 373
+        y: 948
         width: 5
         height: 9
       alignment: 0
@@ -1618,7 +1683,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3aa07ed43566794e8c8fd7256acbc65
+      spriteID: 12585c97e406d704eb866a0386a1376b
       vertices: []
       indices: 
       edges: []
@@ -1627,8 +1692,8 @@ TextureImporter:
       name: tree-adultTree
       rect:
         serializedVersion: 2
-        x: 280
-        y: 739
+        x: 1
+        y: 724
         width: 200
         height: 200
       alignment: 9
@@ -1638,7 +1703,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e06016b7a92e1bd4ba18397941e9d636
+      spriteID: 274ee3f3e0c317e49a36862e207a8657
       vertices: []
       indices: 
       edges: []
@@ -1647,8 +1712,8 @@ TextureImporter:
       name: tree-ancientTree
       rect:
         serializedVersion: 2
-        x: 1
-        y: 538
+        x: 202
+        y: 724
         width: 200
         height: 200
       alignment: 9
@@ -1658,7 +1723,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6979d4834629bee4793a703e36e2c0c5
+      spriteID: 786d737730b8130468f7a097d6b5ab2f
       vertices: []
       indices: 
       edges: []
@@ -1667,10 +1732,10 @@ TextureImporter:
       name: tree-seed
       rect:
         serializedVersion: 2
-        x: 202
-        y: 708
-        width: 25
-        height: 30
+        x: 403
+        y: 860
+        width: 32
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1678,7 +1743,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 340e2195f275e0647b8c1500ffbe4fa0
+      spriteID: d98fc63eb2f40c44da353df26a63c1bd
       vertices: []
       indices: 
       edges: []
@@ -1687,8 +1752,8 @@ TextureImporter:
       name: tree-seedling
       rect:
         serializedVersion: 2
-        x: 228
-        y: 538
+        x: 1
+        y: 523
         width: 200
         height: 200
       alignment: 9
@@ -1698,7 +1763,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7f096b6728d1bcb48a319f1a28891feb
+      spriteID: 1723b4e6d07869640af2038c5579f20c
       vertices: []
       indices: 
       edges: []
@@ -1707,8 +1772,8 @@ TextureImporter:
       name: tree-sprout
       rect:
         serializedVersion: 2
-        x: 1
-        y: 337
+        x: 202
+        y: 523
         width: 200
         height: 200
       alignment: 9
@@ -1718,7 +1783,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc510544a25c4524b9b439168c1ab9bb
+      spriteID: 8fae9691a229fff42ba028d98aec01b9
       vertices: []
       indices: 
       edges: []
@@ -1727,8 +1792,8 @@ TextureImporter:
       name: tree-tweenTree
       rect:
         serializedVersion: 2
-        x: 202
-        y: 337
+        x: 1
+        y: 322
         width: 200
         height: 200
       alignment: 9
@@ -1738,7 +1803,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a92c958c4f358c3438803362ad2cdae1
+      spriteID: 1dd76be0c85c3954e92228926a09d4a7
       vertices: []
       indices: 
       edges: []

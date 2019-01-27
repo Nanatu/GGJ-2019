@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breathMeter: {fileID: 0}
+  cameraController: {fileID: 0}
   facing: 0
   rb2D: {fileID: 3752828736963373367}
   bc2D: {fileID: 3752828736963373366}
@@ -140,6 +141,7 @@ MonoBehaviour:
   NormalSpeed: 1
   CarryingSpeed: 2
   IsCarryingSeed: 0
+  CameraZoomSpeed: 2
   busyHandlingInput: 0
   numOfResources: 0
 --- !u!50 &3752828736963373367
@@ -526,6 +528,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dcd088d53981bd4e8db6f29558bb8db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zoomDirection: 1
   smoothTimeX: 0.3
   smoothTimeY: 0.3
+  zoomSpeed: 1
+  maxZoomDistance: 50
+  isZooming: 0
   player: {fileID: 3752828736963373354}
+  mainCamera: {fileID: 0}
