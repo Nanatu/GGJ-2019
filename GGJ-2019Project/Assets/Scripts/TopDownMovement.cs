@@ -123,7 +123,7 @@ public class TopDownMovement : MonoBehaviour
 
     public void HandleCameraInput()
     {
-        if (Input.GetKey(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             cameraController.isZooming = true;
         }

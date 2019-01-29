@@ -70,14 +70,14 @@ public class ResourceManager : MonoBehaviour
         return new Vector3(x,y,0);
     }
 
-    public void SpawnResources(Vector3 spawnLocation)
+    public void SpawnResources(Transform spawnLocation)
     {
         for (int i = 0; i < startingResources; i++)
         {
             int randomResource = Random.Range(0, resources.Count -1);
-            Vector3 randomLocation = GenerateRandomLocation2D(spawnLocation);
+            Vector3 randomLocation = GenerateRandomLocation2D(spawnLocation.position);
             GameObject newResource = Instantiate(resources[randomResource], randomLocation, Quaternion.identity);
-            newResource.transform.parent = gameObject.transform;
+            newResource.transform.parent = spawnLocation;
             newResource.GetComponent<Orbit>().target = carrier.transform;
             spawnedResources.Add(newResource);
         }

@@ -20,6 +20,9 @@ public class TreeGrowth : MonoBehaviour
     public float adultStage = 0.8f;
     public float ancientStage = 1f;
 
+    public float seedCycle = 2f;
+    private float seedGrowth = 0f;
+
     public Sprite sprout;
     public Sprite seedling;
     public Sprite tween;
@@ -39,7 +42,7 @@ public class TreeGrowth : MonoBehaviour
         growthRing = this.gameObject.transform.Find("Growth").gameObject;
         resourceManager = GameObject.Find("ResourceManager").GetComponent<ResourceManager>();
         
-        resourceManager.SpawnResources(gameObject.transform.position);
+        resourceManager.SpawnResources(gameObject.transform);
 
 
     }
@@ -67,9 +70,10 @@ public class TreeGrowth : MonoBehaviour
             GrowTree();
         }
 
-        if (!madeSeed && growth > adultStage)
+        if (seedGrowth >= seedCycle)
         {
             SpawnSeed();
+            
         }
         
 
@@ -113,6 +117,7 @@ public class TreeGrowth : MonoBehaviour
     public void AddResource(float resourceValue)
     {
         growthRate += resourceValue;
+        seedGrowth += resourceValue;
     }
 
     //Quickly add a Resource
@@ -127,5 +132,6 @@ public class TreeGrowth : MonoBehaviour
         Instantiate(seed, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity, gameObject.transform);
         
         madeSeed = true;
+        seedGrowth = 0f;
     }
 }
